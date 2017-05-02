@@ -1,33 +1,39 @@
 import React from 'react';
-import Drawer from 'material-ui/Drawer';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/MenuItem';
-import Divider from 'material-ui/Divider';
-import IconButton from 'material-ui/IconButton';
-import FontIcon from 'material-ui/FontIcon';
 import { Link } from 'react-router-dom';
-import portfolioSections from '../../data/portfolioSections';
+import {
+    Nav,
+    NavItem,
+    NavLink,
+    NavDropdown,
+    DropdownItem,
+    DropdownToggle,
+    DropdownMenu
+} from 'reactstrap';
+import routes from '../../routes';
 
-export default class NavMenu extends React.Component {
-
+class NavMenu extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { open: false, portfolioSections};
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            dropdownOpen: false,
+            routes: routes
+        };
     }
 
-    handleToggle() {
-        this.setState({open: !this.state.open});
-    }
-
-    handleClose() {
-        this.setState({open: false});
+    toggle() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
     }
 
     renderSectionLinks() {
-        return this.state.portfolioSections.map(({ title, key }) => {
-            return(
-                <Link to={`/section/${key}`} key={key}>
-                    <MenuItem primaryText={title} onTouchTap={this.handleClose.bind(this)} />
+        return this.state.routes.map(({ path, title }, index) => {
+            return (
+                <Link to={path} key={index}
+                      onClick={this.toggle}
+                      className="dropdown-item">
+                    {title}
                 </Link>
             );
         });
@@ -35,28 +41,29 @@ export default class NavMenu extends React.Component {
 
     render() {
         return (
-            <div>
-                <IconButton
-                    onTouchTap={this.handleToggle.bind(this)}>
-                    <FontIcon className="material-icons">menu</FontIcon>
-                </IconButton>
-                <Drawer open={this.state.open}
-                        docked={false}
-                        onRequestChange={(open) => this.setState({open})}>
-                    <Menu>
-                        <Link to='/about'>
-                            <MenuItem primaryText="About Me" onTouchTap={this.handleClose.bind(this)} />
+            <Nav className="centered">
+                <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <DropdownToggle nav caret>
+                        Portfolio
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <Link to="/"
+                              onClick={this.toggle}
+                              className="dropdown-item">
+                            Portfolio Home
                         </Link>
-                        <Divider/>
-
-                        <Link to='/'>
-                            <MenuItem primaryText="Portfolio" onTouchTap={this.handleClose.bind(this)} />
-                        </Link>
-
-                        {this.renderSectionLinks()}
-                    </Menu>
-                </Drawer>
-            </div>
+                        <DropdownItem divider />
+                        <DropdownItem header>Portfolio Sections</DropdownItem>
+                        { this.renderSectionLinks() }
+                    </DropdownMenu>
+                </NavDropdown>
+                <NavItem>
+                    <Link to="/about" className="nav-link">About Me</Link>
+                </NavItem>
+            </Nav>
         );
     }
-}
+
+};
+
+export default NavMenu;
