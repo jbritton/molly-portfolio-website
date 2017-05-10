@@ -6,7 +6,7 @@
 - [x] Build top nav
 - [x] Build home section
 - Build about section
-- Build gallery section
+- [x] Build gallery section
 - [x] Data-drive gallery section
 - Add typography styles
 
