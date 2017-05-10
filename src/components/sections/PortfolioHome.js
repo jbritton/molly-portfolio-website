@@ -10,9 +10,14 @@ const renderThumbs = () => {
             <Col key={index}
                  xs={12} sm={6} md={4} lg={4}
                  className="grid-item">
-                <Link to={path}>
-                    <img src={`assets/thumbs/${thumb}`}
-                         className="img-fluid img-responsive" />
+                <Link to={path} className="section-link">
+                    <div className="image-container">
+                        <img src={`assets/thumbs/${thumb}`}
+                             className="image img-fluid img-responsive" />
+                        <div className="middle">
+                            <div className="text">{title}</div>
+                        </div>
+                    </div>
                 </Link>
             </Col>
         );
@@ -21,7 +26,7 @@ const renderThumbs = () => {
 
 const PortfolioHome = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={{offset: 4, size: 4}}>
                     <img src="assets/logo.png" className="img-fluid img-responsive" />

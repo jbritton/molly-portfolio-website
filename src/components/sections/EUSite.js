@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const EUSite = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">EU Gift Guide</h4>

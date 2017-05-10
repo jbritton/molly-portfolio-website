@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const PaypalPrint = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">PayPal Print</h4>

@@ -1,9 +1,17 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
-const Footer = (props) => {
+const Footer = () => {
     return (
-        <footer className="centered">
-            &copy; 2017 Molly Britton
+        <footer>
+            <Container>
+                <Row>
+                    <Col xs={12} sm={12} md={12} lg={12}>
+                        <hr/>
+                        <span className="centered">&copy; 2017 Molly Britton</span>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     );
 };

@@ -42,6 +42,9 @@ class NavMenu extends React.Component {
     render() {
         return (
             <Nav className="centered">
+                {/*<NavItem>*/}
+                    {/*<Link to="/" className="nav-link">Home</Link>*/}
+                {/*</NavItem>*/}
                 <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                     <DropdownToggle nav caret>
                         Portfolio

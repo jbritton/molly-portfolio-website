@@ -20,7 +20,7 @@ const routes = [
     {
         path: "/na-gift-guide",
         thumb: "GIFTGUIDE_THUMB.jpg",
-        title: "North America Gift Guide",
+        title: "American Gift Guide",
         component: NAGiftGuide
     },
     {

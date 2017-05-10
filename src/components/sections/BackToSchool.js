@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const BackToSchool = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">Back To School</h4>

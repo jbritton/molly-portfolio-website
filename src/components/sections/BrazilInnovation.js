@@ -23,7 +23,7 @@ const renderImages = () => {
 
 const BrazilInnovation = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">Brazil Innovation Pages Design, 2014</h4>

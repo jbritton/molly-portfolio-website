@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const IWill = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">I Will What I Want</h4>

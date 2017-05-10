@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const PostPurchase = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <h4 className="centered">Post Purchase</h4>

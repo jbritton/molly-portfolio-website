@@ -27,5 +27,49 @@ a {
 }
 
 footer {
-    padding: 20px;
+    padding: 40px 0px;
+    color: #cccccc;
+
+    hr {
+        border-top: 1px solid #8c8b8b;
+    }
+}
+
+.section-link {
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .text {
+        color: white;
+        font-size: 14px;
+        padding: 16px 32px;
+        text-align: center;
+    }
+
+    .image-container {
+        &:hover .image {
+            opacity: 0.2;
+        }
+
+        &:hover .middle {
+            opacity: 1.0;
+        }
+    }
 }
