@@ -1,30 +1,37 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import NavMenu from './common/NavMenu';
+import { Route } from 'react-router-dom';
+import Header from './common/Header';
 import Footer from './common/Footer';
-import PortfolioHome from './sections/PortfolioHome';
+import Home from './sections/Home';
 import About from './sections/About';
+import Gallery from './sections/Gallery';
 import routes from '../routes';
 
-const renderSectionRoutes = () => {
-    return routes.map(({ path, component }, index) => {
+const renderGalleryRoutes = () => {
+    return routes.map(({ path, title, images }, index) => {
         return (
-            <Route key={index} path={path} component={component} />
+            <Route key={index} path={path} render={() => {
+                console.log(`Render ${title}`);
+                    return (
+                        <Gallery title={title} images={images} />
+                    );
+                }}
+            />
         );
     });
 };
 
 const App = () => {
     return (
-        <div>
-            <NavMenu/>
-            <section className="main-content">
-                <Route exact path="/" component={PortfolioHome} />
+        <section>
+            <Header />
+            <section className="w3-content w3-padding-48">
+                <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
-                { renderSectionRoutes() }
+                { renderGalleryRoutes() }
             </section>
             <Footer/>
-        </div>
+        </section>
     );
 };
 

@@ -53,6 +53,34 @@ module.exports = {
                     loader: 'css-loader!postcss-loader'
                     // loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]&camelCase!postcss-loader'
                 })
+            },
+            {
+                test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+                //loader: 'url?limit=10000&mimetype=application/font-woff'
+                loader: 'url-loader',
+                options: { limit: 10000, mimetype: 'application/font-woff' }
+            },
+            {
+                test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+                //loader: 'url?limit=10000&mimetype=application/font-woff'
+                loader: 'url-loader',
+                options: { limit: 10000, mimetype: 'application/font-woff' }
+            },
+            {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                //loader: 'url?limit=10000&mimetype=application/octet-stream'
+                loader: 'url-loader',
+                options: { limit: 10000, mimetype: 'application/octet-stream' }
+            },
+            {
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                //loader: 'url?limit=10000&mimetype=image/svg+xml'
+                loader: 'url-loader',
+                options: { limit: 10000, mimetype: 'image/svg+xml' }
+            },
+            {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader'
             }
         ]
     },
