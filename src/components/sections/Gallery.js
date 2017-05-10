@@ -2,8 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Gallery extends React.Component {
+
     constructor(props) {
         super(props);
+
+        // constants
+        this.DELAY = 500;
 
         // init state
         this.state = {
@@ -27,22 +31,34 @@ class Gallery extends React.Component {
     }
 
     nextImage(){
-        let index = this.state.currentIndex + 1;
-        index = (index < this.state.images.length)? index : 0;
-        this.setState({currentIndex: index});
         this.scrollToTop();
+
+        // defer execution until scrolling completes
+        setTimeout(() => {
+            let index = this.state.currentIndex + 1;
+            index = (index < this.state.images.length)? index : 0;
+            this.setState({currentIndex: index});
+        }, this.DELAY);
     }
 
     previousImage(){
-        let index = this.state.currentIndex - 1;
-        index = (index >= 0)? index : this.state.images.length - 1;
-        this.setState({currentIndex: index});
         this.scrollToTop();
+
+        // defer execution until scrolling completes
+        setTimeout(() => {
+            let index = this.state.currentIndex - 1;
+            index = (index >= 0)? index : this.state.images.length - 1;
+            this.setState({currentIndex: index});
+        }, this.DELAY);
     }
 
     goToImage(index){
-        this.setState({currentIndex: index});
         this.scrollToTop();
+
+        // defer execution until scrolling completes
+        setTimeout(() => {
+            this.setState({currentIndex: index});
+        }, this.DELAY);
     }
 
     render() {
@@ -52,7 +68,7 @@ class Gallery extends React.Component {
             <section className="w3-center">
                 <h3>{this.state.title}</h3>
                 <div className="w3-card-4 w3-animate-zoom">
-                    <div className="scrollable w3-border-black w3-border-top w3-border-right w3-border-left">
+                    <div className="container-scrollable w3-border-black w3-border-top w3-border-right w3-border-left">
                         <div ref={(element) => { this.topAnchor = element; }} />
                         <img src={`assets/full/${image}`} className="w3-image" />
                     </div>

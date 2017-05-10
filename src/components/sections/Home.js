@@ -11,7 +11,7 @@ const renderGridItems = () => {
                     <div className="w3-card-4 w3-black w3-margin-top w3-mobile w3-animate-zoom">
                         <img src={`assets/thumbs/${thumb}`} className="w3-image" />
                         <div className="w3-container w3-black">
-                            <p>{title}</p>
+                            <p className="no-wrap">{title}</p>
                         </div>
                     </div>
                 </Link>
