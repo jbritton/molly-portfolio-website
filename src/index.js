@@ -1,6 +1,4 @@
-
-/* css styles */
-import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
 import './style/app.css';
 
 import React from 'react';

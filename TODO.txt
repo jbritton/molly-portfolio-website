@@ -1,7 +1,15 @@
-Routing
-- portfolio section route objects
+# Tasks
+- [x] Add w3.css
+- [x] Add w3.css theme file
+- [x] Remove react bootstrap
+- [x] Build footer
+- [x] Build top nav
+- [x] Build home section
+- Build about section
+- Build gallery section
+- [x] Data-drive gallery section
+- Add typography styles
 
-NavMenu
-- center
-- portfolio dropdown menu
--
+
+# Bugs
+- Dropdown should close on click
