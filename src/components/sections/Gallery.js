@@ -54,7 +54,7 @@ class Gallery extends React.Component {
                 <div className="w3-card-4 w3-animate-zoom">
                     <div className="scrollable w3-border-black w3-border-top w3-border-right w3-border-left">
                         <div ref={(element) => { this.topAnchor = element; }} />
-                        <img src={`/assets/full/${image}`} className="w3-image" />
+                        <img src={`assets/full/${image}`} className="w3-image" />
                     </div>
                     <div className="w3-center w3-container w3-padding w3-large w3-black">
                         <div className="w3-left w3-hover-text-khaki cursor-pointer"
