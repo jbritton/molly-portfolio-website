@@ -160,4 +160,14 @@ const routes = [
     }
 ];
 
+routes.sort(function(x, y){
+    if(x.title < y.title){
+        return -1;
+    }else if(x.title > y.title){
+        return 1
+    }else{
+        return 0;
+    }
+});
+
 export default routes;

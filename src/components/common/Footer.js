@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="w3-container w3-center">
+        <footer className="w3-center w3-container">
             <p>&copy; 2017 Molly Britton</p>
         </footer>
     );

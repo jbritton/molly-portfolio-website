@@ -44,7 +44,7 @@ class Header extends React.Component {
                         <button className="w3-button">
                             Portfolio <i className="fa fa-caret-down w3-text-white" />
                         </button>
-                        <div className="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                        <div className="w3-dropdown-content w3-bar-block w3-white w3-card-4 w3-animate-opacity">
                             {this.renderDropdownLinks()}
                         </div>
                     </div>

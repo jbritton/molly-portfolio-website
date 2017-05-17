@@ -5,11 +5,20 @@
 - [x] Build footer
 - [x] Build top nav
 - [x] Build home section
-- Build about section
 - [x] Build gallery section
 - [x] Data-drive gallery section
+- Section page - remove blocks and drop shadows
+- Section tile should have label within it
+- Section tile should have rollover effect, showing label
+- [x] Gallery page - float gallery nav controls over image
+
 - Add typography styles
+- Build about page
 
 
-# Bugs
+# Bugs/Enhancements
 - Dropdown should close on click
+- [x] Vertically center images in gallery
+- [x] List dropdown links in alphabetical order
+- Refactor routes
+- Add dots to gallery nav controls

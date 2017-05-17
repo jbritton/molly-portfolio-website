@@ -25,12 +25,12 @@ const App = () => {
     return (
         <section>
             <Header />
-            <section className="w3-content w3-padding-48">
+            <section className="main">
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 { renderGalleryRoutes() }
             </section>
-            <Footer/>
+            {/*<Footer/>*/}
         </section>
     );
 };

@@ -7,7 +7,7 @@ class Gallery extends React.Component {
         super(props);
 
         // constants
-        this.DELAY = 500;
+        this.DELAY = 300;
 
         // init state
         this.state = {
@@ -61,27 +61,48 @@ class Gallery extends React.Component {
         }, this.DELAY);
     }
 
+    renderLinks() {
+        return this.state.images.map((image, index) => {
+            const displayIndex = index + 1;
+            const activeClass = (this.state.currentIndex === index)? 'w3-white' : 'w3-transparent';
+            const classNames = 'w3-tag w3-border w3-hover-white cursor-pointer ' + activeClass;
+            return (
+                <button key={index} className={classNames}
+                      onClick={() => { this.goToImage(index); }}>
+                    {displayIndex}
+                </button>
+            );
+        });
+    }
+
     render() {
         const image = this.state.images[this.state.currentIndex];
 
         return (
-            <section className="w3-center">
-                <h3>{this.state.title}</h3>
-                <div className="w3-card-4 w3-animate-zoom">
-                    <div className="container-scrollable w3-border-black w3-border-top w3-border-right w3-border-left">
-                        <div ref={(element) => { this.topAnchor = element; }} />
-                        <img src={`assets/full/${image}`} className="w3-image" />
-                    </div>
-                    <div className="w3-center w3-container w3-padding w3-large w3-black">
-                        <div className="w3-left w3-hover-text-khaki cursor-pointer"
-                             onClick={this.previousImage}>&#10094;</div>
-                        <div className="w3-right w3-hover-text-khaki cursor-pointer"
-                             onClick={this.nextImage}>&#10095;</div>
-                        {/*<span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.goToImage}></span>*/}
-                        {/*<span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.goToImage}></span>*/}
-                        {/*<span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.goToImage}></span>*/}
+            <section className="w3-display-container gallery-container">
+                <div className="gallery-viewport w3-center w3-content">
+                    <div className="top-anchor" ref={(element) => { this.topAnchor = element; }}></div>
+
+                    <div className="w3-white">
+                        <img src={`assets/full/${image}`} className="w3-image w3-animate-opacity" />
                     </div>
                 </div>
+                <div className="w3-display-topmiddle w3-bar w3-center w3-black w3-opacity-min">
+                    <h6>{this.state.title}</h6>
+                </div>
+                <button className="w3-button w3-display-left w3-black w3-opacity-min"
+                        onClick={this.previousImage}>
+                    &#10094;
+                </button>
+                <button className="w3-button w3-display-right w3-black w3-opacity-min"
+                        onClick={this.nextImage}>
+                    &#10095;
+                </button>
+                <div className="w3-display-bottommiddle w3-text-white w3-bar w3-padding-16 w3-black w3-center w3-opacity-min">
+                    {this.renderLinks()}
+                </div>
+
+
             </section>
         );
     }
