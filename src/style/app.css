@@ -1,8 +1,14 @@
 @import "w3.css";
 
+@font-face {
+    font-family: BertholdAkzidenz;
+    src: url('./font/BertholdAkzidenzGroteskBERoman.ttf');
+}
+
 body {
     background: #616161;
     color: #ffffff;
+    font-family: BertholdAkzidenz;
 }
 
 .gallery-container {
@@ -14,6 +20,35 @@ body {
     /*max-height: 700px;*/
     max-height: 95vh;
     overflow: scroll;
+}
+
+.gallery-link {
+    .wrapper {
+        background-color: white;
+        display: inline-block;
+    }
+
+    img {
+        opacity: 1.0;
+    }
+
+    .label {
+        color: black;
+        opacity: 0.0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        img {
+            opacity: 0.20;
+        }
+
+        .label {
+            color: black;
+            opacity: 1.0;
+        }
+    }
 }
 
 .top-anchor {
@@ -29,3 +64,4 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+

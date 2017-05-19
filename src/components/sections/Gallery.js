@@ -7,7 +7,7 @@ class Gallery extends React.Component {
         super(props);
 
         // constants
-        this.DELAY = 300;
+        this.SCROLL_DELAY = 100;
 
         // init state
         this.state = {
@@ -22,6 +22,10 @@ class Gallery extends React.Component {
         this.goToImage = this.goToImage.bind(this);
     }
 
+    componentDidUpdate(){
+        setTimeout(() => this.scrollToTop(), this.SCROLL_DELAY);
+    }
+
     scrollToTop(){
         this.topAnchor.scrollIntoView({
             block: "start",
@@ -31,37 +35,22 @@ class Gallery extends React.Component {
     }
 
     nextImage(){
-        this.scrollToTop();
-
-        // defer execution until scrolling completes
-        setTimeout(() => {
-            let index = this.state.currentIndex + 1;
-            index = (index < this.state.images.length)? index : 0;
-            this.setState({currentIndex: index});
-        }, this.DELAY);
+        let index = this.state.currentIndex + 1;
+        index = (index < this.state.images.length)? index : 0;
+        this.setState({currentIndex: index});
     }
 
     previousImage(){
-        this.scrollToTop();
-
-        // defer execution until scrolling completes
-        setTimeout(() => {
-            let index = this.state.currentIndex - 1;
-            index = (index >= 0)? index : this.state.images.length - 1;
-            this.setState({currentIndex: index});
-        }, this.DELAY);
+        let index = this.state.currentIndex - 1;
+        index = (index >= 0)? index : this.state.images.length - 1;
+        this.setState({currentIndex: index});
     }
 
     goToImage(index){
-        this.scrollToTop();
-
-        // defer execution until scrolling completes
-        setTimeout(() => {
-            this.setState({currentIndex: index});
-        }, this.DELAY);
+        this.setState({currentIndex: index});
     }
 
-    renderLinks() {
+    renderNavLinks() {
         return this.state.images.map((image, index) => {
             const displayIndex = index + 1;
             const activeClass = (this.state.currentIndex === index)? 'w3-white' : 'w3-transparent';
@@ -73,6 +62,24 @@ class Gallery extends React.Component {
                 </button>
             );
         });
+    }
+
+    renderNavControls(){
+        if(this.state.images && this.state.images.length > 1){
+            return (
+                <div>
+                    <button className="w3-button w3-display-left w3-black w3-opacity-min"
+                            onClick={this.previousImage}>
+                        &#10094;
+                    </button>
+                    <button className="w3-button w3-display-right w3-black w3-opacity-min"
+                            onClick={this.nextImage}>
+                        &#10095;
+                    </button>
+                </div>
+            );
+        }
+        return null;
     }
 
     render() {
@@ -90,19 +97,10 @@ class Gallery extends React.Component {
                 <div className="w3-display-topmiddle w3-bar w3-center w3-black w3-opacity-min">
                     <h6>{this.state.title}</h6>
                 </div>
-                <button className="w3-button w3-display-left w3-black w3-opacity-min"
-                        onClick={this.previousImage}>
-                    &#10094;
-                </button>
-                <button className="w3-button w3-display-right w3-black w3-opacity-min"
-                        onClick={this.nextImage}>
-                    &#10095;
-                </button>
+                {this.renderNavControls()}
                 <div className="w3-display-bottommiddle w3-text-white w3-bar w3-padding-16 w3-black w3-center w3-opacity-min">
-                    {this.renderLinks()}
+                    {this.renderNavLinks()}
                 </div>
-
-
             </section>
         );
     }

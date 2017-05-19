@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../../routes';
+import Footer from '../common/Footer';
 
 
 const renderGridItems = () => {
     return routes.map(({ title, path, thumb }, index) => {
         return (
             <div key={index} className="w3-third w3-center">
-                <Link to={path}>
-                    <div className="w3-card-4 w3-black w3-margin-top w3-mobile w3-animate-zoom">
-                        <img src={`assets/thumbs/${thumb}`} className="w3-image" />
-                        <div className="w3-container w3-black">
-                            <p className="no-wrap">{title}</p>
-                        </div>
+                    <div className="w3-display-container w3-margin-top w3-mobile w3-animate-zoom">
+                        <Link to={path} className="gallery-link">
+                            <div className="wrapper">
+                                <img src={`assets/thumbs/${thumb}`} className="w3-image w3-orange" />
+                            </div>
+                            <div className="w3-display-middle">
+                                <span className="w3-large label">{title}</span>
+                            </div>
+                        </Link>
                     </div>
-                </Link>
             </div>
         );
     });
@@ -31,6 +34,7 @@ const Home = () => {
             <div className="w3-row-padding">
                 {renderGridItems()}
             </div>
+            <Footer/>
         </section>
     );
 };

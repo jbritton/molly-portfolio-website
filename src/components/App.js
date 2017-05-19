@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Header from './common/Header';
-import Footer from './common/Footer';
 import Home from './sections/Home';
 import About from './sections/About';
 import Gallery from './sections/Gallery';
@@ -11,7 +10,6 @@ const renderGalleryRoutes = () => {
     return routes.map(({ path, title, images }, index) => {
         return (
             <Route key={index} path={path} render={() => {
-                console.log(`Render ${title}`);
                     return (
                         <Gallery title={title} images={images} />
                     );
@@ -30,7 +28,6 @@ const App = () => {
                 <Route path="/about" component={About} />
                 { renderGalleryRoutes() }
             </section>
-            {/*<Footer/>*/}
         </section>
     );
 };
