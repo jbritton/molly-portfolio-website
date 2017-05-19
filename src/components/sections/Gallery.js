@@ -13,7 +13,8 @@ class Gallery extends React.Component {
         this.state = {
             title: props.title,
             images: props.images,
-            currentIndex: 0
+            currentIndex: 0,
+            direction: 0
         };
 
         // bind event handlers
@@ -37,17 +38,17 @@ class Gallery extends React.Component {
     nextImage(){
         let index = this.state.currentIndex + 1;
         index = (index < this.state.images.length)? index : 0;
-        this.setState({currentIndex: index});
+        this.setState({currentIndex: index, direction: 1});
     }
 
     previousImage(){
         let index = this.state.currentIndex - 1;
         index = (index >= 0)? index : this.state.images.length - 1;
-        this.setState({currentIndex: index});
+        this.setState({currentIndex: index, direction: -1});
     }
 
     goToImage(index){
-        this.setState({currentIndex: index});
+        this.setState({currentIndex: index, direction: 0});
     }
 
     renderNavLinks() {
@@ -82,17 +83,21 @@ class Gallery extends React.Component {
         return null;
     }
 
-    render() {
+    renderGalleryImage() {
         const image = this.state.images[this.state.currentIndex];
+        return (
+            <div className="w3-white">
+                <img src={`assets/full/${image}`} className="w3-image w3-animate-opacity" />
+            </div>
+        );
+    }
 
+    render() {
         return (
             <section className="w3-display-container gallery-container">
                 <div className="gallery-viewport w3-center w3-content">
                     <div className="top-anchor" ref={(element) => { this.topAnchor = element; }}></div>
-
-                    <div className="w3-white">
-                        <img src={`assets/full/${image}`} className="w3-image w3-animate-opacity" />
-                    </div>
+                    {this.renderGalleryImage()}
                 </div>
                 <div className="w3-display-topmiddle w3-bar w3-center w3-black w3-opacity-min">
                     <h6>{this.state.title}</h6>

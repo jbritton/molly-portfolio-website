@@ -2,5 +2,4 @@
 - Build about page
 - Dropdown should close on click
 - Refactor routes
-- Animate opacity on gallery item hover
 - Gallery - left and right transition
