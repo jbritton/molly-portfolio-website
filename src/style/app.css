@@ -6,21 +6,42 @@
 }
 
 body {
-    background: #616161;
-    color: #ffffff;
+    color: #555555;
     font-family: BertholdAkzidenz;
+    text-transform: uppercase;
 }
 
-.gallery-container {
-    margin-top: 40px;
+footer {
+    margin-top: 16px;
+    margin-bottom: 48px;
 }
 
-.gallery-viewport {
-    width: 100%;
+
+/* typography */
+body, h1, h2, h3, h4, h5, h6, a, p, span {
+    font-family: BertholdAkzidenz,Arial,sans-serif;
+}
+
+/* layout styles */
+.nav-header {
+    height: 5vh;
+}
+
+.main-content {
     height: 95vh;
-    /*max-height: 700px;*/
-    /*max-height: 95vh;*/
+    width: 100%;
     overflow: scroll;
+    padding-top: 64px;
+}
+
+/* gallery styles */
+.gallery-header {
+    padding-top: 0px;
+    padding-bottom: 36px;
+
+    h5 {
+        margin-bottom: 0px;
+    }
 }
 
 .gallery-link {
@@ -37,9 +58,7 @@ body {
     .label {
         opacity: 0.0;
         transition: opacity 1s;
-        color: black;
         font-weight: bold;
-        text-transform: uppercase;
     }
 
     &:hover {

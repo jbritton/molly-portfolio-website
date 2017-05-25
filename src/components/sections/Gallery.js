@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Footer from '../Footer';
 
 class Gallery extends React.Component {
 
@@ -54,8 +55,8 @@ class Gallery extends React.Component {
     renderNavLinks() {
         return this.state.images.map((image, index) => {
             const displayIndex = index + 1;
-            const activeClass = (this.state.currentIndex === index)? 'w3-white' : 'w3-transparent';
-            const classNames = 'w3-tag w3-border w3-hover-white cursor-pointer ' + activeClass;
+            const activeClass = (this.state.currentIndex === index)? 'w3-black' : 'w3-gray';
+            const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
             return (
                 <button key={index} className={classNames}
                       onClick={() => { this.goToImage(index); }}>
@@ -68,12 +69,12 @@ class Gallery extends React.Component {
     renderNavControls(){
         if(this.state.images && this.state.images.length > 1){
             return (
-                <div>
-                    <button className="w3-button w3-display-left w3-black w3-opacity-min"
+                <div className="w3-xxlarge">
+                    <button className="w3-button w3-display-left"
                             onClick={this.previousImage}>
                         &#10094;
                     </button>
-                    <button className="w3-button w3-display-right w3-black w3-opacity-min"
+                    <button className="w3-button w3-display-right"
                             onClick={this.nextImage}>
                         &#10095;
                     </button>
@@ -86,27 +87,31 @@ class Gallery extends React.Component {
     renderGalleryImage() {
         const image = this.state.images[this.state.currentIndex];
         return (
-            <div className="w3-white">
-                <img src={`assets/full/${image}`} className="w3-image w3-animate-opacity" />
-            </div>
+            <img src={`assets/full/${image}`}
+                 className="w3-image w3-animate-opacity" />
         );
     }
 
     render() {
         return (
-            <section className="w3-display-container gallery-container">
-                <div className="gallery-viewport w3-center w3-content">
-                    <div className="top-anchor" ref={(element) => { this.topAnchor = element; }}></div>
+          <section className="w3-content">
+              <div className="gallery-viewport w3-center">
+                  <div ref={(element) => { this.topAnchor = element; }} />
+                  <div className="gallery-header">
+                      <h5>{this.state.title}</h5>
+                      <span>Lorem Ipsum</span>
+                  </div>
+
+                  <div className="w3-white">
                     {this.renderGalleryImage()}
-                </div>
-                <div className="w3-display-topmiddle w3-bar w3-center w3-black w3-opacity-min">
-                    <h6>{this.state.title}</h6>
-                </div>
-                {this.renderNavControls()}
-                <div className="w3-display-bottommiddle w3-text-white w3-bar w3-padding-16 w3-black w3-center w3-opacity-min">
-                    {this.renderNavLinks()}
-                </div>
-            </section>
+                  </div>
+              </div>
+              {this.renderNavControls()}
+              <div className="w3-display-bottommiddle w3-bar w3-padding-16 w3-center">
+                {this.renderNavLinks()}
+              </div>
+              <Footer />
+          </section>
         );
     }
 }

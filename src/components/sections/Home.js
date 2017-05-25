@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../../routes';
-import Footer from '../common/Footer';
+import Footer from '../Footer';
 
 
 const renderGridItems = () => {
@@ -25,10 +25,12 @@ const renderGridItems = () => {
 
 const Home = () => {
     return (
-        <section className="w3-content w3-padding-48">
-            <div className="w3-row-padding">
+        <section className="w3-content">
+            <div className="w3-row-padding" style={{'margin-bottom': '40px'}}>
                 <div className="w3-third">&nbsp;</div>
-                <div className="w3-third"><img src="assets/logo.png" className="w3-image"/></div>
+                <div className="w3-third">
+                  <img src="assets/logo.png" className="w3-image" />
+                </div>
                 <div className="w3-third">&nbsp;</div>
             </div>
             <div className="w3-row-padding">

@@ -3,3 +3,10 @@
 - Dropdown should close on click
 - Refactor routes
 - Gallery - left and right transition
+
+
+
+
+# Font Sizes
+Nav links 11 or 12px
+
