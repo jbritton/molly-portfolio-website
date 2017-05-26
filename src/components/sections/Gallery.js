@@ -55,7 +55,7 @@ class Gallery extends React.Component {
     renderNavLinks() {
         return this.state.images.map((image, index) => {
             const displayIndex = index + 1;
-            const activeClass = (this.state.currentIndex === index)? 'w3-black' : 'w3-gray';
+            const activeClass = (this.state.currentIndex === index)? 'w3-black' : 'w3-light-gray';
             const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
             return (
                 <button key={index} className={classNames}
@@ -69,7 +69,7 @@ class Gallery extends React.Component {
     renderNavControls(){
         if(this.state.images && this.state.images.length > 1){
             return (
-                <div className="w3-xxlarge">
+                <div className="w3-xxlarge w3-opacity-min">
                     <button className="w3-button w3-display-left"
                             onClick={this.previousImage}>
                         &#10094;

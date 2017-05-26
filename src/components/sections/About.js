@@ -1,23 +1,35 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
 
 const About = () => {
     return (
-        <Container>
-            <Row>
-                <Col xs={12} sm={12} md={12} lg={12}>
-                    <h4 className="centered">About Me</h4>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} sm={4} md={4} lg={4}>
-                    Contact Info
-                </Col>
-                <Col xs={12} sm={8} md={8} lg={8}>
-                    Main Content
-                </Col>
-            </Row>
-        </Container>
+        <section className="w3-content">
+          <div className="w3-row-padding">
+            <div className="w3-col s4">
+              <ul className="w3-ul w3-border">
+                <li>
+                  <a className="w3-bar-item">
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a className="w3-bar-item">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a className="w3-bar-item">
+                    Email
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="w3-col s8">
+              <p>
+                A description.  Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </section>
     );
 };
 
