@@ -32,7 +32,7 @@ const PortfolioHome = () => {
 
       <div className="w3-row">
         <div className="w3-col s5 w3-yellow">
-          {renderTile(portfolioData['innovation'])}
+          {renderTile(portfolioData['brazil-innovation'])}
         </div>
         <div className="w3-col s7">
           <div className="w3-row">
@@ -75,7 +75,7 @@ const PortfolioHome = () => {
           </div>
         </div>
         <div className="w3-col s7">
-          {renderTile(portfolioData['na-gift-guide'])}
+          {renderTile(portfolioData['american-gift-guide'])}
         </div>
       </div>
 

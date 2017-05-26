@@ -1,5 +1,5 @@
 const portfolioData = {
-  "na-gift-guide": {
+  "american-gift-guide": {
     "path": "/na-gift-guide",
     "title": "American Gift Guide",
     "subtitle": "",
@@ -11,9 +11,9 @@ const portfolioData = {
     "title": "Arris Project",
     "subtitle": "",
     "thumbnail": "ARRIS.jpg",
-    "images": ["Portfolio_iPhone_Arris.png", "Portfolio_Arris.jpg"]
+    "images": ["Portfolio_Arris.jpg", "Portfolio_iPhone_Arris.png"]
   },
-  "innovation": {
+  "brazil-innovation": {
     "path": "/innovation",
     "title": "Brazil Innovation",
     "subtitle": "",
@@ -25,28 +25,28 @@ const portfolioData = {
     "title": "I Will What I Want",
     "subtitle": "",
     "thumbnail": "IWWIW.jpg",
-    "images": ["Portfolio_iPhone_IWWIW.png", "Portfolio_IWWIW.jpg"]
+    "images": ["Portfolio_IWWIW.jpg", "Portfolio_iPhone_IWWIW.png"]
   },
   "hockey-world": {
     "path": "/hockey-world",
     "title": "Hockey World",
     "subtitle": "",
     "thumbnail": "HOCKEY.jpg",
-    "images": ["Portfolio_iPhone_Hockey.png", "Portfolio_Hockey.jpg"]
+    "images": ["Portfolio_Hockey.jpg", "Portfolio_iPhone_Hockey.png"]
   },
   "back-to-school": {
     "path": "/back-to-school",
     "title": "Back To School",
     "subtitle": "",
     "thumbnail": "BACKPACKS.jpg",
-    "images": ["Portfolio_iPhone_Backpacks.png", "Portfolio_Backpacks_1.jpg", "Portfolio_Backpacks_2.jpg", "Portfolio_Backpacks_3.jpg", "Portfolio_Backpacks_4.jpg"]
+    "images": ["Portfolio_Backpacks_1.jpg", "Portfolio_Backpacks_2.jpg", "Portfolio_Backpacks_3.jpg", "Portfolio_Backpacks_4.jpg", "Portfolio_iPhone_Backpacks.png"]
   },
   "eu-site-launch": {
     "path": "/eu-site-launch",
     "title": "EU Site Launch",
     "subtitle": "",
     "thumbnail": "INTL_HP.jpg",
-    "images": ["Portfolio_iPhone_HP_MB.png", "Portfolio_iPhone_HP_MB_UK.png", "Portfolio_HP_1.jpg", "Portfolio_HP_2.jpg", "Portfolio_HP_3.jpg"]
+    "images": ["Portfolio_HP_1.jpg", "Portfolio_HP_2.jpg", "Portfolio_HP_3.jpg", "Portfolio_iPhone_HP_MB.png", "Portfolio_iPhone_HP_MB_UK.png"]
   },
   "eu-gift-guide": {
     "path": "/eu-gift-guide",
@@ -67,14 +67,14 @@ const portfolioData = {
     "title": "Uniforms",
     "subtitle": "",
     "thumbnail": "UNIFORMS.jpg",
-    "images": ["Portfolio_iPhone_Uniforms.png", "Portfolio_Uniforms.jpg"]
+    "images": ["Portfolio_Uniforms.jpg", "Portfolio_iPhone_Uniforms.png"]
   },
   "footwear": {
     "path": "/footwear",
     "title": "Footwear",
     "subtitle": "",
     "thumbnail": "SPECTRUM.jpg",
-    "images": ["Portfolio_iPhone_spectrum.png", "Portfolio_Spectrum_1.jpg", "Portfolio_Spectrum_2.jpg", "Portfolio_Spectrum_3.jpg", "Portfolio_Spectrum_Email.jpg", "Portfolio_Spectrum_Gemini_Email.jpg"]
+    "images": ["Portfolio_Spectrum_1.jpg", "Portfolio_Spectrum_2.jpg", "Portfolio_Spectrum_3.jpg", "Portfolio_Spectrum_Email.jpg", "Portfolio_Spectrum_Gemini_Email.jpg", "Portfolio_iPhone_spectrum.png"]
   },
   "cogender-underwear": {
     "path": "/cogender-underwear",
@@ -88,14 +88,14 @@ const portfolioData = {
     "title": "Post Purchase",
     "subtitle": "",
     "thumbnail": "POSTPURCHASE.jpg",
-    "images": ["Portfolio_iPhone_PostPurchase.png", "Portfolio_PostPurchase_2.jpg", "Portfolio_PostPurchase_3.jpg", "Portfolio_PostPurchase_5.jpg", "Portfolio_PostPurchase_6.jpg", "Portfolio_PostPurchase_4.jpg", "Portfolio_PostPurchase_1.jpg"]
+    "images": ["Portfolio_PostPurchase_2.jpg", "Portfolio_PostPurchase_3.jpg", "Portfolio_PostPurchase_5.jpg", "Portfolio_PostPurchase_6.jpg", "Portfolio_PostPurchase_4.jpg", "Portfolio_PostPurchase_1.jpg", "Portfolio_iPhone_PostPurchase.png"]
   },
   "run-world": {
     "path": "/run-world",
     "title": "Run World",
     "subtitle": "",
     "thumbnail": "RUN.jpg",
-    "images": ["Portfolio_iPhone_Run.png", "Portfolio_Run_1.jpg", "Portfolio_Run_2.jpg"]
+    "images": ["Portfolio_Run_2.jpg", "Portfolio_Run_1.jpg", "Portfolio_iPhone_Run.png"]
   },
   "emails": {
     "path": "/emails",
