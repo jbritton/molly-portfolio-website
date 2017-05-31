@@ -42,7 +42,7 @@ class Header extends React.Component {
     return (
       <header className="nav-header w3-top">
         <nav className="w3-bar w3-white">
-          <div className="w3-content w3-small">
+          <div className="app-content w3-small">
             <div className="w3-right">
               <Link to="/" className="w3-bar-item w3-button">
                 Home

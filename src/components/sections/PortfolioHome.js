@@ -19,7 +19,7 @@ const renderTile = ({path, title, thumbnail}) => {
 
 const PortfolioHome = () => {
   return (
-    <section className="tile-content">
+    <section className="app-content">
       <div className="w3-row-padding" style={{'margin-bottom': '40px'}}>
         <div className="w3-third">&nbsp;</div>
         <div className="w3-third">

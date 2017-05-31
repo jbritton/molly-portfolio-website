@@ -94,7 +94,7 @@ class Gallery extends React.Component {
 
     render() {
         return (
-          <section className="w3-content">
+          <section className="app-content">
               <div className="gallery-viewport w3-center">
                   <div ref={(element) => { this.topAnchor = element; }} />
                   <div className="gallery-header">
