@@ -7,10 +7,8 @@ const renderTile = ({path, title, thumbnail}) => {
   return (
     <div className="w3-display-container w3-animate-opacity">
       <Link to={path} className="gallery-link">
-        <div className="wrapper">
-          <img src={`assets/thumbnails/${thumbnail}`}
-               className="w3-image" />
-        </div>
+        <img src={`assets/tiles/${thumbnail}`}
+             className="w3-image" />
         <div className="w3-display-middle w3-center">
           <span className="w3-large label">{title}</span>
         </div>
@@ -21,7 +19,7 @@ const renderTile = ({path, title, thumbnail}) => {
 
 const PortfolioHome = () => {
   return (
-    <section className="w3-content">
+    <section className="tile-content">
       <div className="w3-row-padding" style={{'margin-bottom': '40px'}}>
         <div className="w3-third">&nbsp;</div>
         <div className="w3-third">
@@ -31,23 +29,23 @@ const PortfolioHome = () => {
       </div>
 
       <div className="w3-row">
-        <div className="w3-col s5 w3-yellow">
+        <div className="w3-col s6">
           {renderTile(portfolioData['brazil-innovation'])}
         </div>
-        <div className="w3-col s7">
+        <div className="w3-col s6">
           <div className="w3-row">
-            <div className="w3-col s6 w3-red">
+            <div className="w3-col s6">
               {renderTile(portfolioData['back-to-school'])}
             </div>
-            <div className="w3-col s6 w3-blue">
+            <div className="w3-col s6">
               {renderTile(portfolioData['hockey-world'])}
             </div>
           </div>
           <div className="w3-row">
-            <div className="w3-col s6 w3-purple">
+            <div className="w3-col s6">
               {renderTile(portfolioData['arris'])}
             </div>
-            <div className="w3-col s6 w3-dark-gray">
+            <div className="w3-col s6">
               {renderTile(portfolioData['footwear'])}
             </div>
           </div>
@@ -55,16 +53,16 @@ const PortfolioHome = () => {
       </div>
 
       <div className="w3-row">
-        <div className="w3-col s7">
+        <div className="w3-col s6">
           {renderTile(portfolioData['cogender-underwear'])}
         </div>
-        <div className="w3-col s5">
+        <div className="w3-col s6">
           {renderTile(portfolioData['i-will'])}
         </div>
       </div>
 
       <div className="w3-row">
-        <div className="w3-col s5">
+        <div className="w3-col s4">
           <div className="w3-row">
             <div className="w3-col s12">
               {renderTile(portfolioData['uniforms'])}
@@ -74,7 +72,7 @@ const PortfolioHome = () => {
             </div>
           </div>
         </div>
-        <div className="w3-col s7">
+        <div className="w3-col s8">
           {renderTile(portfolioData['american-gift-guide'])}
         </div>
       </div>
@@ -93,7 +91,7 @@ const PortfolioHome = () => {
           {renderTile(portfolioData['eu-gift-guide'])}
         </div>
         <div className="w3-col s6">
-          {renderTile(portfolioData['paypal-print'])}
+          {renderTile(portfolioData['paypal'])}
         </div>
       </div>
 
