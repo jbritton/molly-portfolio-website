@@ -20,12 +20,11 @@ const renderTile = ({path, title, thumbnail}) => {
 const PortfolioHome = () => {
   return (
     <section className="app-content">
-      <div className="w3-row-padding" style={{'margin-bottom': '40px'}}>
-        <div className="w3-third">&nbsp;</div>
-        <div className="w3-third">
+      <div className="w3-row" style={{'marginBottom': '40px'}}>
+        <div className="w3-col s4">&nbsp;</div>
+        <div className="w3-col s4">
           <img src="assets/logo.png" className="w3-image" />
         </div>
-        <div className="w3-third">&nbsp;</div>
       </div>
 
       <div className="w3-row">
