@@ -26,12 +26,12 @@ class Header extends React.Component {
     portfolioKeys.sort();
 
     return portfolioKeys.map((key, index) => {
-      const {path, title} = portfolioData[key];
+      const {path, link} = portfolioData[key];
       return (
         <Link to={path} key={index}
               onClick={this.closeDropdown}
               className="w3-bar-item w3-button w3-text-black">
-          {title}
+          {link}
         </Link>
       );
     });

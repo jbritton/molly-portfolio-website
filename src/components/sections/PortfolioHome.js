@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import portfolioData from '../../data/portfolioData';
 
-const renderTile = ({path, title, thumbnail}) => {
+const renderTile = ({path, link, thumbnail}) => {
   return (
     <div className="w3-display-container w3-animate-opacity">
       <Link to={path} className="gallery-link">
         <img src={`assets/tiles/${thumbnail}`}
              className="w3-image" />
         <div className="w3-display-middle w3-center">
-          <span className="w3-large label">{title}</span>
+          <span className="w3-large label">{link}</span>
         </div>
       </Link>
     </div>
@@ -29,23 +29,23 @@ const PortfolioHome = () => {
 
       <div className="w3-row">
         <div className="w3-col s6">
-          {renderTile(portfolioData['brazil-innovation'])}
+          {renderTile(portfolioData.brazilInnovation)}
         </div>
         <div className="w3-col s6">
           <div className="w3-row">
             <div className="w3-col s6">
-              {renderTile(portfolioData['back-to-school'])}
+              {renderTile(portfolioData.backToSchool)}
             </div>
             <div className="w3-col s6">
-              {renderTile(portfolioData['hockey-world'])}
+              {renderTile(portfolioData.hockeyWorld)}
             </div>
           </div>
           <div className="w3-row">
             <div className="w3-col s6">
-              {renderTile(portfolioData['arris'])}
+              {renderTile(portfolioData.arris)}
             </div>
             <div className="w3-col s6">
-              {renderTile(portfolioData['footwear'])}
+              {renderTile(portfolioData.footwear)}
             </div>
           </div>
         </div>
@@ -53,10 +53,10 @@ const PortfolioHome = () => {
 
       <div className="w3-row">
         <div className="w3-col s6">
-          {renderTile(portfolioData['cogender-underwear'])}
+          {renderTile(portfolioData.cogenderUnderwear)}
         </div>
         <div className="w3-col s6">
-          {renderTile(portfolioData['i-will'])}
+          {renderTile(portfolioData.iWill)}
         </div>
       </div>
 
@@ -64,33 +64,33 @@ const PortfolioHome = () => {
         <div className="w3-col s4">
           <div className="w3-row">
             <div className="w3-col s12">
-              {renderTile(portfolioData['uniforms'])}
+              {renderTile(portfolioData.uniforms)}
             </div>
             <div className="w3-col s12">
-              {renderTile(portfolioData['eu-site-launch'])}
+              {renderTile(portfolioData.euSiteLaunch)}
             </div>
           </div>
         </div>
         <div className="w3-col s8">
-          {renderTile(portfolioData['american-gift-guide'])}
+          {renderTile(portfolioData.americanGiftGuide)}
         </div>
       </div>
 
       <div className="w3-row">
         <div className="w3-col s6">
-          {renderTile(portfolioData['run-world'])}
+          {renderTile(portfolioData.runWorld)}
         </div>
         <div className="w3-col s6">
-          {renderTile(portfolioData['emails'])}
+          {renderTile(portfolioData.productStyling)}
         </div>
       </div>
 
       <div className="w3-row">
         <div className="w3-col s6">
-          {renderTile(portfolioData['eu-gift-guide'])}
+          {renderTile(portfolioData.euGiftGuide)}
         </div>
         <div className="w3-col s6">
-          {renderTile(portfolioData['paypal'])}
+          {renderTile(portfolioData.paypal)}
         </div>
       </div>
 
