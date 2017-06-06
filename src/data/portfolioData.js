@@ -1,7 +1,10 @@
+
+
 const portfolioData = {
   americanGiftGuide: {
     path: '/na-gift-guide',
     link: 'American Gift Guide',
+    linkSize: 'L',
     title: 'NORTH AMERICA GIFT GUIDE, 2015',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_09.jpg',
@@ -10,6 +13,7 @@ const portfolioData = {
   arris: {
     path: '/arris',
     link: 'Arris Project',
+    linkSize: 'M',
     title: 'ARRIS PROJECT, FIRST BALTIMORE CRAFTED COLLECTION',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_04.jpg',
@@ -18,6 +22,7 @@ const portfolioData = {
   brazilInnovation: {
     path: '/innovation',
     link: 'Brazil Innovation',
+    linkSize: 'L',
     title: 'BRAZIL INNOVATION PAGES DESIGN, 2014',
     subtitle: 'LEAD UX AND VISUAL DESIGNER (LIVE TEXT DESIGNED WITH PARALLAX)',
     thumbnail: 'PORTFOLIO_TILES_01.jpg',
@@ -26,6 +31,7 @@ const portfolioData = {
   iWill: {
     path: '/i-will',
     link: 'I Will What I Want',
+    linkSize: 'L',
     title: 'I WILL WHAT I WANT LANDING PAGE',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_07.jpg',
@@ -34,6 +40,7 @@ const portfolioData = {
   hockeyWorld: {
     path: '/hockey-world',
     link: 'Hockey World',
+    linkSize: 'M',
     title: 'HOCKEY WORLD LANDING PAGE',
     subtitle: 'DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_03.jpg',
@@ -42,6 +49,7 @@ const portfolioData = {
   backToSchool: {
     path: '/back-to-school',
     link: 'Back To School',
+    linkSize: 'M',
     title: 'BACK TO SCHOOL LANDING PAGES',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_02.jpg',
@@ -50,6 +58,7 @@ const portfolioData = {
   euSiteLaunch: {
     path: '/eu-site-launch',
     link: 'EU Site Launch',
+    linkSize: 'M',
     title: 'EU SITE DESIGN LAUNCH, 2014',
     subtitle: 'LEAD UX AND VISUAL DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_10.jpg',
@@ -58,6 +67,7 @@ const portfolioData = {
   euGiftGuide: {
     path: '/eu-gift-guide',
     link: 'EU Gift Guide',
+    linkSize: 'L',
     title: 'FIRST EU GIFT GUIDE, 2014',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD UX AND VISUAL DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_13.jpg',
@@ -66,6 +76,7 @@ const portfolioData = {
   paypal: {
     path: '/paypal',
     link: 'Paypal',
+    linkSize: 'L',
     title: 'PAYPAL PRINT DESIGN',
     subtitle: 'VISUAL DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_14.jpg',
@@ -74,6 +85,7 @@ const portfolioData = {
   uniforms: {
     path: '/uniforms',
     link: 'Uniforms',
+    linkSize: 'M',
     title: 'SCHOOL UNIFORMS LANDING PAGE',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_08.jpg',
@@ -82,6 +94,7 @@ const portfolioData = {
   footwear: {
     path: '/footwear',
     link: 'Footwear',
+    linkSize: 'M',
     title: 'FOOTWEAR LANDING PAGES AND EMAIL ASSETS',
     subtitle: 'LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_05.jpg',
@@ -90,6 +103,7 @@ const portfolioData = {
   cogenderUnderwear: {
     path: '/cogender-underwear',
     link: 'Cogender Underwear',
+    linkSize: 'L',
     title: 'CO-GENDER UNDERWEAR SITE AND EMAIL ASSETS',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_06.jpg',
@@ -98,6 +112,7 @@ const portfolioData = {
   runWorld: {
     path: '/run-world',
     link: 'Run World',
+    linkSize: 'L',
     title: 'RUN WORLD LANDING PAGES',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_11.jpg',
@@ -106,6 +121,7 @@ const portfolioData = {
   productStyling: {
     path: '/productStyling',
     link: 'Product Styling',
+    linkSize: 'L',
     title: 'PRODUCT STYLING AND EMAIL MARKETING',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_12.jpg',

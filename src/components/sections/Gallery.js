@@ -22,9 +22,26 @@ class Gallery extends React.Component {
     this.goToImage = this.goToImage.bind(this);
   }
 
+  componentDidMount() {
+    this.preloadImages();
+  }
+
   componentDidUpdate() {
     if(this.props.onChange){
       this.props.onChange.call();
+    }
+  }
+
+  getImagePath(image) {
+    return `assets/full/${image}`;
+  }
+
+  preloadImages() {
+    if(this.state.images.length > 0){
+      const preloaded = this.state.images.map((image) => {
+        let preloadedImage = new Image();
+        preloadedImage.src = this.getImagePath(image);
+      }, this);
     }
   }
 
@@ -81,7 +98,7 @@ class Gallery extends React.Component {
   renderGalleryImage() {
     const image = this.state.images[this.state.currentIndex];
     return (
-      <img src={`assets/full/${image}`}
+      <img src={this.getImagePath(image)}
            className="w3-image w3-animate-opacity"/>
     );
   }
