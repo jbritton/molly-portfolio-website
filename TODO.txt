@@ -1,17 +1,5 @@
-# Tasks
-- Build about page
-- Dropdown should close on click
-- Refactor routes
-- Gallery - left and right transition
 
 
-
-
-# Font Sizes
-Nav links 11 or 12px
-
-
-
-# Molly
-- Arris iPhone
-
+1) Domain name - link CNAME
+2) Preload gallery section images
+3) Scale text size on home page (Small, Large)

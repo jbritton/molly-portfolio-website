@@ -23,8 +23,9 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: 'src/index.html'
 });
 
-const copyPlugin = new CopyWebpackPlugin([ {
-  from: 'src/assets', to: 'assets' }
+const copyPlugin = new CopyWebpackPlugin([
+  { from: 'src/assets', to: 'assets' },
+  { from: 'CNAME' }
 ]);
 
 
