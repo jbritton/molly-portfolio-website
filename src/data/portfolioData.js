@@ -104,7 +104,7 @@ const portfolioData = {
     path: '/cogender-underwear',
     link: 'Cogender Underwear',
     linkSize: 'L',
-    title: 'CO-GENDER UNDERWEAR SITE AND EMAIL ASSETS',
+    title: 'CO-GENDER UNDERWEAR SITE',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_06.jpg',
     images: ['Portfolio_Underwear.jpg']
