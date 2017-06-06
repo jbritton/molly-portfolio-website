@@ -13,7 +13,7 @@ const portfolioData = {
     title: 'ARRIS PROJECT, FIRST BALTIMORE CRAFTED COLLECTION',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_04.jpg',
-    images: ['Portfolio_Arris.jpg', 'Portfolio_iPhone_Arris.png']
+    images: ['Portfolio_Arris.jpg', 'Portfolio_Arris_Email.jpg', 'Portfolio_iPhone_Arris.jpg']
   },
   brazilInnovation: {
     path: '/innovation',
@@ -29,7 +29,7 @@ const portfolioData = {
     title: 'I WILL WHAT I WANT LANDING PAGE',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_07.jpg',
-    images: ['Portfolio_IWWIW.jpg', 'Portfolio_iPhone_IWWIW.png']
+    images: ['Portfolio_IWWIW.jpg', 'Portfolio_iPhone_IWWIW.jpg']
   },
   hockeyWorld: {
     path: '/hockey-world',
@@ -37,7 +37,7 @@ const portfolioData = {
     title: 'HOCKEY WORLD LANDING PAGE',
     subtitle: 'DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_03.jpg',
-    images: ['Portfolio_Hockey.jpg', 'Portfolio_iPhone_Hockey.png']
+    images: ['Portfolio_Hockey.jpg', 'Portfolio_iPhone_Hockey.jpg']
   },
   backToSchool: {
     path: '/back-to-school',
@@ -45,7 +45,7 @@ const portfolioData = {
     title: 'BACK TO SCHOOL LANDING PAGES',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_02.jpg',
-    images: ['Portfolio_Backpacks_1.jpg', 'Portfolio_Backpacks_2.jpg', 'Portfolio_Backpacks_3.jpg', 'Portfolio_Backpacks_4.jpg', 'Portfolio_iPhone_Backpacks.png']
+    images: ['Portfolio_Backpacks_1.jpg', 'Portfolio_Backpacks_2.jpg', 'Portfolio_Backpacks_3.jpg', 'Portfolio_Backpacks_4.jpg', 'Portfolio_iPhone_Backpacks.jpg']
   },
   euSiteLaunch: {
     path: '/eu-site-launch',
@@ -53,7 +53,7 @@ const portfolioData = {
     title: 'EU SITE DESIGN LAUNCH, 2014',
     subtitle: 'LEAD UX AND VISUAL DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_10.jpg',
-    images: ['Portfolio_HP_2.jpg', 'Portfolio_HP_1.jpg', 'Portfolio_HP_3.jpg', 'Portfolio_iPhone_HP_MB.png', 'Portfolio_iPhone_HP_MB_UK.png']
+    images: ['Portfolio_HP_2.jpg', 'Portfolio_HP_1.jpg', 'Portfolio_HP_3.jpg', 'Portfolio_iPhone_HP_MB.jpg', 'Portfolio_iPhone_HP_MB_UK.jpg']
   },
   euGiftGuide: {
     path: '/eu-gift-guide',
@@ -69,7 +69,7 @@ const portfolioData = {
     title: 'PAYPAL PRINT DESIGN',
     subtitle: 'VISUAL DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_14.jpg',
-    images: ['Portfolio_PayPal.png']
+    images: ['Portfolio_PayPal.jpg']
   },
   uniforms: {
     path: '/uniforms',
@@ -77,7 +77,7 @@ const portfolioData = {
     title: 'SCHOOL UNIFORMS LANDING PAGE',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_08.jpg',
-    images: ['Portfolio_Uniforms.jpg', 'Portfolio_iPhone_Uniforms.png']
+    images: ['Portfolio_Uniforms.jpg', 'Portfolio_iPhone_Uniforms.jpg']
   },
   footwear: {
     path: '/footwear',
@@ -85,7 +85,7 @@ const portfolioData = {
     title: 'FOOTWEAR LANDING PAGES AND EMAIL ASSETS',
     subtitle: 'LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_05.jpg',
-    images: ['Portfolio_Spectrum_3.jpg', 'Portfolio_Spectrum_1.jpg', 'Portfolio_Spectrum_2.jpg', 'Portfolio_Spectrum_Email.jpg', 'Portfolio_Spectrum_Gemini_Email.jpg', 'Portfolio_iPhone_spectrum.png']
+    images: ['Portfolio_Spectrum_3.jpg', 'Portfolio_Spectrum_1.jpg', 'Portfolio_Spectrum_2.jpg', 'Portfolio_Spectrum_Email.jpg', 'Portfolio_Spectrum_Gemini_Email.jpg', 'Portfolio_iPhone_spectrum.jpg']
   },
   cogenderUnderwear: {
     path: '/cogender-underwear',
@@ -93,7 +93,7 @@ const portfolioData = {
     title: 'CO-GENDER UNDERWEAR SITE AND EMAIL ASSETS',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_06.jpg',
-    images: ['Portfolio_Underwear_1.jpg', 'Portfolio_Underwear_2.jpg', 'Portfolio_Underwear_3.jpg', 'Portfolio_Underwear_4.jpg', 'Portfolio_Underwear_5.jpg', 'Portfolio_Underwear_6.jpg']
+    images: ['Portfolio_Underwear.jpg']
   },
   runWorld: {
     path: '/run-world',
@@ -101,7 +101,7 @@ const portfolioData = {
     title: 'RUN WORLD LANDING PAGES',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_11.jpg',
-    images: ['Portfolio_Run_2.jpg', 'Portfolio_Run_1.jpg', 'Portfolio_iPhone_Run.png']
+    images: ['Portfolio_Run_1.jpg', 'Portfolio_Run_2.jpg', 'Portfolio_Run_4.jpg', 'Portfolio_Run_3.jpg', 'Portfolio_iPhone_Run.jpg']
   },
   productStyling: {
     path: '/productStyling',
@@ -109,7 +109,7 @@ const portfolioData = {
     title: 'PRODUCT STYLING AND EMAIL MARKETING',
     subtitle: 'PHOTOGRAPHY ART DIRECTOR, LEAD DESIGNER',
     thumbnail: 'PORTFOLIO_TILES_12.jpg',
-    images: []
+    images: ['Portfolio_Emails_1.jpg', 'Portfolio_Emails_2.jpg']
   }
 };
 

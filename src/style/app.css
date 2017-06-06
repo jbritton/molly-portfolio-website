@@ -1,8 +1,13 @@
-@import "w3.css";
+@import 'w3.css';
 
 @font-face {
     font-family: BertholdAkzidenz;
     src: url('./font/BertholdAkzidenzGroteskBERoman.ttf');
+}
+
+@font-face {
+    font-family: BertholdAkzidenzCondensed;
+    src: url('./font/BertholdAkzidenzGroteskCondensed.otf') format('opentype');
 }
 
 body {
@@ -37,6 +42,38 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
 .app-content {
     max-width: 960px;
     margin: auto;
+}
+
+.about-content {
+    text-transform: none;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: BertholdAkzidenzCondensed,Arial,sans-serif;
+    }
+
+    h1 {
+        font-size: 80px;
+        letter-spacing: -3px;
+        line-height: 90px;
+    }
+
+    h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 45px;
+        margin-top: 60px;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 0 20%;
+        text-align: left;
+    }
+
+    a {
+        padding: 0px 7px;
+        font-size: 13px;
+    }
 }
 
 /* gallery styles */
@@ -86,4 +123,6 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     cursor: pointer;
 }
 
-
+footer {
+    margin-top: 60px;
+}
