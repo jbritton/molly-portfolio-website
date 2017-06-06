@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <section className="w3-content w3-center about-content">
-        <img src="assets/FACE.png" className="w3-image" style={{'width': '650px'}}/>
+        <img src="assets/face.jpg" className="w3-image" style={{'width': '650px'}}/>
         <h1>YOURS TRULY</h1>
         <p>
           Hello! I’m Molly. Visual, interactive, and UX designer. My background comes in the way of fine arts and print design. I sort of stumbled into the world of web design by chance. Good stumble though. Web’s pretty sweet. I’m terrible at folding laundry and I wish doing dishes wasn’t a thing but I can spot a misaligned pixel like a hawk. Is that something to brag about? Poss not def. But let’s chat if you think it is, and we can touch on all things web, print, and user experience related.
