@@ -67,12 +67,12 @@ class Gallery extends React.Component {
       const activeClass = (this.state.currentIndex === index) ? 'w3-black' : 'w3-light-gray';
       const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
       return (
-        <button key={index} className={classNames}
-                onClick={() => {
-                  this.goToImage(index);
-                }}>
-          {displayIndex}
-        </button>
+          <button key={index} className={classNames}
+                  onClick={() => {
+                    this.goToImage(index);
+                  }}>
+            {displayIndex}
+          </button>
       );
     });
   }
@@ -80,16 +80,16 @@ class Gallery extends React.Component {
   renderNavControls() {
     if (this.state.images && this.state.images.length > 1) {
       return (
-        <div className="w3-xxlarge w3-opacity-min">
-          <button className="w3-button w3-display-left"
-                  onClick={this.previousImage}>
-            &#10094;
-          </button>
-          <button className="w3-button w3-display-right"
-                  onClick={this.nextImage}>
-            &#10095;
-          </button>
-        </div>
+          <div className="w3-xxlarge w3-opacity-min">
+            <button className="w3-button w3-display-left"
+                    onClick={this.previousImage}>
+              &#10094;
+            </button>
+            <button className="w3-button w3-display-right"
+                    onClick={this.nextImage}>
+              &#10095;
+            </button>
+          </div>
       );
     }
     return null;
@@ -98,29 +98,29 @@ class Gallery extends React.Component {
   renderGalleryImage() {
     const image = this.state.images[this.state.currentIndex];
     return (
-      <img src={this.getImagePath(image)}
-           className="w3-image w3-animate-opacity"/>
+        <img src={this.getImagePath(image)}
+             className="w3-image w3-animate-opacity"/>
     );
   }
 
   render() {
     return (
-      <section className="app-content">
-        <div className="gallery-viewport w3-center">
-          <div className="gallery-header">
-            <h5>{this.state.title}</h5>
-            <span>{this.state.subtitle}</span>
+        <section className="app-content">
+          <div className="gallery-viewport w3-center">
+            <div className="gallery-header">
+              <h5>{this.state.title}</h5>
+              <span>{this.state.subtitle}</span>
+            </div>
+            <div className="w3-white">
+              {this.renderGalleryImage()}
+            </div>
           </div>
-          <div className="w3-white">
-            {this.renderGalleryImage()}
+          {this.renderNavControls()}
+          <div className="w3-display-bottommiddle w3-bar w3-padding-16 w3-center">
+            {this.renderNavLinks()}
           </div>
-        </div>
-        {this.renderNavControls()}
-        <div className="w3-display-bottommiddle w3-bar w3-padding-16 w3-center">
-          {this.renderNavLinks()}
-        </div>
-        <Footer />
-      </section>
+          <Footer />
+        </section>
     );
   }
 }

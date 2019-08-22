@@ -55,9 +55,9 @@ class Header extends React.Component {
                   {this.renderDropdownLinks()}
                 </div>
               </div>
-              <Link to="/about" className="w3-bar-item w3-button">
-                ABOUT
-              </Link>
+              {/*<Link to="/about" className="w3-bar-item w3-button">*/}
+                {/*ABOUT*/}
+              {/*</Link>*/}
             </div>
           </div>
         </nav>

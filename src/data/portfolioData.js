@@ -119,7 +119,7 @@ const portfolioData = {
     images: ['Portfolio_Run_1.jpg', 'Portfolio_Run_2.jpg', 'Portfolio_Run_4.jpg', 'Portfolio_Run_3.jpg', 'Portfolio_iPhone_Run.jpg']
   },
   productStyling: {
-    path: '/productStyling',
+    path: '/product-styling',
     link: 'Product Styling',
     linkSize: 'L',
     title: 'PRODUCT STYLING AND EMAIL MARKETING',
