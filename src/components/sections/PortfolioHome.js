@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
-import portfolioData from '../../data/portfolioData';
+import {portfolioData} from '../../data/portfolioData';
 
 const renderTile = ({path, link, linkSize, thumbnail}) => {
     const textSize = (linkSize === 'L')? 'label-large' : '';
     const linkClasses = 'label ' + textSize;
     return (
-        <div className="w3-display-container w3-animate-opacity">
+        <div className="w3-display-container">
             <Link to={path} className="gallery-link">
                 <img src={`assets/tiles/${thumbnail}`}
                      className="w3-image" />
-                <div className="w3-display-middle w3-center">
-                    <span className={linkClasses}>{link}</span>
-                </div>
             </Link>
         </div>
     );
