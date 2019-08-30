@@ -12,6 +12,16 @@ import OMFWeb from './sections/OMFWeb';
 
 class App extends Component {
 
+    componentDidUpdate() {
+        this.scrollToTop();
+
+        window.onhashchange = this.scrollToTop().bind(this);
+    }
+
+    scrollToTop(){
+        this.mainContent.scrollTop = 0;
+    }
+
     renderPortfolioRoutes(){
         return Object.values(portfolioData)
             .map((value, index) => {
@@ -26,7 +36,7 @@ class App extends Component {
         return (
             <div className="w3-display-container">
                 <NavHeader />
-                <div className="main-content">
+                <div className="main-content" ref={(element) => { this.mainContent = element; }}>
                     <Route exact path="/" component={PortfolioHome} />
                     {/*<Route path="/about" component={About} />*/}
                     {this.renderPortfolioRoutes()}

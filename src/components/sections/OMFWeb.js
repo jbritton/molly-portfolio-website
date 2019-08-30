@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFWeb = () => {
 	return (
 		<div>
-			<section className="w3-content omf-web-content">
+			<section className="app-content omf-web-content">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/WEB_HERO.jpg" className="w3-image" />
@@ -15,10 +15,10 @@ const OMFWeb = () => {
 						<h4>Creative Direction, Visual Design, UX design, Responsive Site</h4>
 						<h1>OneMain Financial Website Redesign</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							A short time after I started, I was responsible for overseeing the complete redesign of OneMainFinancial.com. The relationship with the development team stationed out of Chicago, was in a transitional state. They had been operating as a separate entity for a long time, and were newly aquired by OneMain when I joined the team. We had to begin by opening the doors of communication between our two teams, and then establish a working process.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							Once both teams were aligned, we began developing a road map for the site overhaul. Over a six month period of time, we would update the header and footer, restructure the layout of all main nav pages, and establish typography, grid, container, CTA and all other component styles.
 						</p>
 					</div>
 				</div>
@@ -30,13 +30,12 @@ const OMFWeb = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Project Details Descriptions</h4>
+						<h4>OMF.com Redesign</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							The original OneMainFinancial.com was missing key user centered design principles. The infomation was lacking a clearly defined heirarchy, which made it overwhelming and difficult to navigate. The structure was outdated, and inconsistent across pages. We wanted to carry over the values from the new brand platform; understanding our customer and helping them navigate the loan process, start to finish. So, a good digital experience was paramount to this. While also prioritizing the objectives of informing the customer, driving applications, and ultimately converting loans.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
-						</p>
+							For the initial redesign, we focused on the Homepage, Personal Loans, Why Us, Branch Search and Resources pages. I started by wireframing out a consistent layout, using a mobile first design strategy. Once the structure was in a good place, we implemented all new brand guidelines into the final visual designs. We also decided to officialy use the url OMF.com. I worked very closely with the dev team to adhere to all current platform requirements, and was completely hands on throughout the entire redesign process.						</p>
 					</div>
 				</div>
 				<div className="w3-row">
@@ -52,12 +51,12 @@ const OMFWeb = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Sketch Templates/Responsive Design</h4>
+						<h4>Sketch Templates</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							We worked with a UX designer on the development team to build Sketch templates based on the approved new design layout, which would be used for all design development moving forward. The site would be built in a responsive framework, so the various break points were needed for initial reference.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							We defined a new grid system for each device template, text sizes, colors and alignment, container settings/styles, primary and secondary CTA styles, the new header and footer, and a variety of libraries for icon families, symbols, etc.
 						</p>
 					</div>
 				</div>
@@ -86,10 +85,7 @@ const OMFWeb = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Header/Footer</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
-						</p>
-						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The redesign of the header and footer were an important first step to redefining the orgainizational structure and visual balance for the rest of the website.  Simplifying the color scheme, cleaning up the hierarchy of information and providing a more seamless user experience were the top priorities. We also updated the social icons to fit the new design direction, reworked CTA styles, and defined legal annotation rules.
 						</p>
 					</div>
 				</div>
@@ -103,7 +99,7 @@ const OMFWeb = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Roles and Responsibilities</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Creative Direction, UX Design, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
 					</div>
 				</div>
@@ -112,7 +108,13 @@ const OMFWeb = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Team Credits</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Amara Waters - Creative Director Copy<br/>
+							Sharon Kane - Art Director<br/>
+							Sam Kittinger - Sr. Designer<br/>
+							Jason Evans - Sr. Designer<br/>
+							Mike O’ Sullivan - UX Designer<br/>
+							Ron Smith - Development<br/>
+							Shaila Kuchibhotla - Account Supervisor<br/>
 						</p>
 					</div>
 				</div>

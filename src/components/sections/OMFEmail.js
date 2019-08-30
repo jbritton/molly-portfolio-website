@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFEmail = () => {
 	return (
 		<div>
-			<section className="w3-content omf-email-content">
+			<section className="app-content omf-email-content">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/EMAIL_HERO.jpg" className="w3-image" />
@@ -15,10 +15,10 @@ const OMFEmail = () => {
 						<h4>Creative Direction, Design Direction, Branding, Visual Design</h4>
 						<h1>OneMain Financial Email Redesign</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							One of the first goals I had at OneMain, was to improve the email design structure, which was lacking consistency and brand recognition. The header and footer were not standardized, there were no guidelines for font usage, spacing, padding, body width, headlines, subheads, CTAs, etc. As a result, each email looked like it was coming from a different company.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The objective of the redesign was to develop a cohesive set of templates that would be versatile enough to fit all subject matter needs, both solicitations and non-solicitation. We would need to solve for a variety of programs including rewards, account management, collections, social engagement, merchant referral, etc.
 						</p>
 					</div>
 				</div>
@@ -30,12 +30,12 @@ const OMFEmail = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Project Details Descriptions</h4>
+						<h4>Redesign Details</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Based on the existing email criteria and categories, we tested in to 2 rounds of creative. For the first round we created 8 different individual templates that worked as a family of designs. The idea was that the project requestor could select a design from those options based on the criteria of the assignment.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							We took into consideration the need for images and icons for some marketing sends, and the need for copy only for others. We formated the header, footer, body width, text size and color, CTA treatment, social icon style, hyperlink treatment, etc. We implemented all new brand guidelines, and established consistency that the email platform was lacking.
 						</p>
 					</div>
 				</div>
@@ -54,10 +54,10 @@ const OMFEmail = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Templates</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							In the initial redesign, we used the straight across tagline logo lockup, centered on a white header. A hero image space was allotted for 4 of the designs, which would be used  primarily for solicitation emails. We provided 4 different hero image layouts, for icon use, non-icon use, additional information sections, and horizontal vs. vertical stacks. There were 2 designs dedicated to the Rewards Program, enrollment and engagement, and 2 text only templates designed for non-solicitation sends.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							Based on the test results from the preliminary set of designs, we shifted the templates into a second and final round of design. The tagline was dropped from the logo, we added more hierarchy definition to the type treatment, the body was differentiated by a narrower width than the hero image and a powder blue background, and social icons were changed to follow new CTA rules. We added an additional hero image design, and separated out the Rewards Program emails into their own category, adding a 3rd teamplate to the group.
 						</p>
 					</div>
 				</div>
@@ -69,12 +69,9 @@ const OMFEmail = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Project Details Descriptions</h4>
+						<h4>Mobile</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
-						</p>
-						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The final templates were better optomized for mobile display, editing image and text size/orientation to scale responsively. The body section margins were dropped for mobile, but all other design details would appear consistent across all devices.
 						</p>
 					</div>
 				</div>
@@ -93,7 +90,7 @@ const OMFEmail = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Roles and Responsibilities</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Creative Direction, Design Direction, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
 					</div>
 				</div>
@@ -102,7 +99,12 @@ const OMFEmail = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Team Credits</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Amara Waters - Creative Director Copy<br/>
+							Sharon Kane - Art Director<br/>
+							Sam Kittinger - Sr. Designer<br/>
+							Jason Evans - Sr. Designer<br/>
+							Zac Willett - Designer<br/>
+							Cory Onay - Development<br/>
 						</p>
 					</div>
 				</div>

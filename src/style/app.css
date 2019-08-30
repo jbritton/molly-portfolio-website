@@ -1,5 +1,6 @@
 @import 'w3.css';
 
+/* typography styles */
 @font-face {
     font-family: BertholdAkzidenz;
     src: url('./font/BertholdAkzidenzGroteskBERoman.ttf');
@@ -13,37 +14,34 @@
 body {
     color: #555555;
     font-family: BertholdAkzidenz;
-    text-transform: uppercase;
 }
 
-footer {
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
-
-/* typography */
 body, h1, h2, h3, h4, h5, h6, a, p, span {
     font-family: BertholdAkzidenz,Arial,sans-serif;
 }
 
-/* layout styles */
+
+/* navigation styles */
 .nav-header {
     height: 5vh;
-    opacity: 0.9;
-}
-
-.nav-header, .nav-header button {
+    opacity: 0.98;
     text-transform: uppercase;
+
+    button {
+        text-transform: uppercase;
+    }
+
+    .w3-button {
+        width: 180px;
+    }
+
+    i.fa-caret-down {
+        margin-left: 5px;
+    }
 }
 
-.nav-subheader {
-    font-size: 13px;
-    letter-spacing: 0.9;
-    color: #9c9c9c;
-    font-weight: bold;
-    text-transform: none;
-}
 
+/* layout styles */
 .main-content {
     height: 95vh;
     width: 100%;
@@ -143,7 +141,7 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
 }
 
 .top-anchor {
-    height:40px;
+    height: 40px;
 }
 
 .cursor-pointer {
@@ -152,4 +150,6 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
 
 footer {
     margin-top: 60px;
+    margin-bottom: 48px;
 }
+

@@ -27,6 +27,25 @@ const PortfolioHome = () => {
                 <div className="w3-col s4">&nbsp;</div>
             </div>
 
+
+            <div className="w3-row">
+                <div className="w3-col s6">
+                    {renderTile(portfolioData.omfBrand)}
+                </div>
+                <div className="w3-col s6">
+                    {renderTile(portfolioData.omfWeb)}
+                </div>
+            </div>
+
+            <div className="w3-row">
+                <div className="w3-col s6">
+                    {renderTile(portfolioData.omfEmail)}
+                </div>
+                <div className="w3-col s6">
+                    {renderTile(portfolioData.omfMainStreet)}
+                </div>
+            </div>
+
             <div className="w3-row">
                 <div className="w3-col s6">
                     {renderTile(portfolioData.brazilInnovation)}

@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFBrand = () => {
 	return (
 		<div>
-			<section className="w3-content omf-brand-content">
+			<section className="app-content omf-brand-content">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/BRAND_HERO.jpg" className="w3-image" />
@@ -13,13 +13,19 @@ const OMFBrand = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Strategy, Creative Direction, Brand Design, Design Systems, Visual Design</h4>
+						<h4>Creative Strategy, Creative Direction, Brand Design, Design Systems, Visual Design</h4>
 						<h1>OneMain Financial Rebrand</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							OneMain has provided loans and other credit-related products to more than 10 million customers in 44 states for more than 100 years, helping hard working people tackle life’s challenges.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							I was hired by OneMain in September of 2017 to help with a rebrand that was underway. I was very quickly immersed in the existing creative development process/progress with the partnering agency and asked to help steer the creative direction for a fast approaching January launch deadline.
+						</p>
+						<p>
+							The newly appointed CMO wanted to transform the relatively unknown brand in a very competitive industry, into a stand-out leader in our space. To do this, we would highlight our biggest differentiator, 1500+ physical branch locations staffed with 10,000 caring and empathetic loan specialists who assist their customers in getting the help they need. Human touch and compassion is at the core of who OneMain is.
+						</p>
+						<p>
+							The goal of the brand repositioning was to communicate to our customers that OneMain Financial believes people deserve humanity when they get a loan. Even if they don’t get a loan, they still deserve to be treated with decency, respect and dignity. And there’s only one way to do it. With humans who can help out in a time of need. Thus, the new tagline "Lending Done Human” was born.
 						</p>
 					</div>
 				</div>
@@ -31,12 +37,12 @@ const OMFBrand = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Project Details Descriptions</h4>
+						<h4>Brand Details</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							When I joined the group we were facing some unique challenges. The newly assigned AOR, hired to work on the rebrand, was initially tasked with creating a brand campaign prior to tackling the pillars of a full rebrand.  There was some difficulty separating the campaign specific creative direction, and the remaining underdeveloped creative components that would need to be unique to the OneMain brand, not the brand campaign.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The logo redesign was in the process of being tweaked to incorporate the new "Lending Done Human" tagline, however typography, color, photography and iconography were still in need of defining. Additionally, the voice & tone would need to be reworked to fit the new brand direction. Instead of using stiff, corporate-sounding language, we would say things the way people would actually say them. We empathize with our audience, they’re human—and so are we. Amara Waters and I worked very closely together to start developing the foundation for these critical pieces that would come together to form the new OneMain Financial.
 						</p>
 					</div>
 				</div>
@@ -50,10 +56,13 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Logo</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							The former OneMain logo incorporated the old tagline "Lending Made Personal” into a lockup , as well as a symbol representing a cul-de-sac of houses as a nod to "main street”, the inspiration behind the company’s name. When addressing the logo during the rebrand, the decision was made to keep the word mark in the native typeface, FS Albert, as the branch signage would remain untouched for the foreseeable future. We wanted to preserve the relationship of the logo in all marketing materials with the already recognizable signage and reduce any future confusion.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							In the initial brand launch, the "Lending Done Human” tagline was added as a lockup to the OneMain Financial word mark in both a straight-across execution for digital spaces, and in an arched "smile” shape for printed materials.  Raski, a handwritten 1 weight font, was selected for the tagline lockup to give the extra "human touch” to our new identity.
+						</p>
+						<p>
+							However, post launch, the decision was made to drop the tagline from the logo all together, and the word mark would be used independently, in both horizontal and stacked form. The blue was also altered once the new brand colors were selected.
 						</p>
 					</div>
 				</div>
@@ -65,12 +74,15 @@ const OMFBrand = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Brand Campaign</h4>
+						<h4>Brand Campaign, TV</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							The Lending Done Human brand campaign would be the first major TV spot in the company’s history. It had already been established that our branches were the company’s biggest differentiator, so the objective was to spotlight the employees that work in those branches. The goal was to feature the loan specialists as extraordinary people who take the extra time to help their customers. We produced 2, 30 second spots that would run in 6 test markets.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The campaign was called "Super. Human.” The narrative: "It’s a sad state of affairs today that just being treated like a human, by a human, feels like something special. Well, at OneMain Financial, treating people with respect is just how we roll. So please don’t make us out to be heroes. We’re just doing our jobs. That said, we do try to be super at it.”
+						</p>
+						<p>
+							The composition: "Start with a heroic, "superhuman” setup that makes the things we believe ought to be normal sound larger than life. Then, undercut that with human presence—showing the human motivation behind why we do what we do—and bring things back down to earth with a "that’s just how we roll” attitude.”
 						</p>
 					</div>
 				</div>
@@ -99,7 +111,13 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Typography</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							We selected Avenir Next as our primary font, to replace the former logo font, FS Albert, which was also used in all communications. Avinir Next is a sans-serif typeface that takes inspiration from the geometric style of sans-serif typefaces developed in the 1920s. It encourages trust, reflects our personality and reinforces our strengths as a brand.
+						</p>
+						<p>
+							Raski, the handwritten Lending Done Human font, would be used sparingly as a supportive secondary. Note: Raski has since been removed from all creative executions.
+						</p>
+						<p>
+							The original strategic point of view, was that the 2 formed a set of fonts that fully embodied and immediately communicated the values of OneMain Financial. When used with consideration, they would become a flexible system that helped engage and connect with customers in a more authentic, meaningful way.
 						</p>
 					</div>
 				</div>
@@ -123,10 +141,10 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Color</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							For the new color palette, we dug into the history of the brand. Inspired by the year 1912, when OneMain Financial was founded, we decided the idea of a neighborhood and the way colors painted a town in 1912 communicated the optimism of the times. The values and history of the OneMain Financial brand were important considerations during this exercise.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							Based on that research, we landed on marine and powder blues as our primary colors. Additionally, blue generally communicates the qualities of credibility, calm authority, cleanliness, focus, professionalism, trust, responsibility, honesty and loyalty. We also knew we would need secondary colors that would work harmoniously with the primary blues, and wanted them to be interchangeable in any number of combinations. We looked to paint swatches and pantone books to help us find a family of calming complimentary colors that fit the overall goal of the new palette.
 						</p>
 					</div>
 				</div>
@@ -155,10 +173,10 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Photography</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							The marketing creative in the financial industry, is heavily reliant on stock photography. We knew we couldn’t get around that, but also knew that we needed to establish a set of guidelines that would elevate the level of quality in photography selection, editing, and be ownable for the brand. The photography that was being used prior to the rebrand was very posed, unnatural, and disconnected.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							We shifted the direction into a more editorial space, capturing authentic, candid moments that our customers could relate to and see themselves in. We also established a new editing direction to achieve a more cohesive, cooler, calmer family of images. Finally, we added pops of brand colors to each photo to bring the photography into that ownable space.
 						</p>
 					</div>
 				</div>
@@ -177,10 +195,10 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Iconography/Illustration</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							After the color, typography and photography categories were settling into a good place, we still felt like something was missing to fully bring the brand to life. The concept of "human touch” had already been integrated into the logo lockup, so it seemed like a natural fit to find a place for illustration within the brand. We also knew there was a need for iconography across all marketing channels to follow UX best practices and aid in guided communications.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							We hired an artist to develop a system of iconography that could also serve as illustration for both digital and print materials. We landed on a style that felt "hand-drawn” but was scalable across all mediums. We wanted a range of brush strokes and color fills that could dial up or down the detail depending on the subject matter. We also wanted to bring out the essence of heritage without feeling too dated or conservative.
 						</p>
 					</div>
 				</div>
@@ -204,7 +222,7 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Roles and Responsibilities</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Creative Direction, Design Direction, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
 					</div>
 				</div>
@@ -213,7 +231,17 @@ const OMFBrand = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Team Credits</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Amara Waters - Creative Director Copy<br/>
+							Sharon Kane - Art Director<br/>
+							Sam Kittinger - Sr. Designer<br/>
+							Jason Evans - Sr. Designer<br/>
+							Zac Willett - Designer<br/>
+							Kate Sarber - Designer<br/>
+							Tara Jacoby - Illustrator<br/><br/>
+
+							FCB New York - Strategy, Creative Direction & Ideation, Production<br/>
+							O Positive Films - TV Production<br/>
+							Spencer Riviera - Director<br/>
 						</p>
 					</div>
 				</div>

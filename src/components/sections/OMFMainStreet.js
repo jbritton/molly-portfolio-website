@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFMainStreet = () => {
 	return (
 		<div>
-			<section className="w3-content omf-mainstreet-content">
+			<section className="app-content omf-mainstreet-content">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/MOMS_Hero.jpg" className="w3-image" />
@@ -15,10 +15,10 @@ const OMFMainStreet = () => {
 						<h4>Creative Direction, Design Direction, Visual Design, UX design, Creative Strategy & Concept Development</h4>
 						<h1>Made on Main Street National Event</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							OneMain partnered with Main Street America to provide a grant program that supports the Main Street movement, the leading voice for community revitalization across the country. The mission was to provide the opportunity to renew the downtown areas of the selected winners and subsequently transform their economies, leverage local leadership, and improve overall quality of life. The grant program, alongside a celebratory event series, sought to bring lasting change and social offerings to the communities that OneMain serves.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							To celebrate the winning grants and their impact on their local communities, OneMain organized town festivals in 7 cities that brought the neighborhood together for a day of music and entertainment.
 						</p>
 					</div>
 				</div>
@@ -30,12 +30,15 @@ const OMFMainStreet = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Event Collateral</h4>
+						<h4>Creative Details</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							I was asked to help craft an overarching design strategy that would reflect the initiatives of the Main Street mission and translate into a flexible visual aesthetic that could span multiple deliverables. Amara Waters, Creative Director of Copy, and I worked closely with the project manager to develop a system that fit the needs of the program but also felt relatable to our customers and residents of the towns where each event would be held.
 						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							We wanted to align our brand with the partnership of Main Street America, so we decided our brand blue would be integrated throughout all event collateral. We also employed the artist who illustrated our initial brand icon set to create a logo for the event that represented main streets everywhere.
+						</p>
+						<p>
+							We wanted to invoke the feeling of connecting people with each other and bringing a community together through the shared appreciation for breathing new life into the heart of their towns. The line treatment and background mapping detail was representative of the streets that connect them to one another and the neighborhood they all call home.
 						</p>
 					</div>
 				</div>
@@ -57,12 +60,13 @@ const OMFMainStreet = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>Digital</h4>
+						<h4>Digital Presence</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							To help promote and provide details for each event we built individual landing pages hosted on omf.com for each city’s festival. We also leveraged our social platforms to encourage customer engagement and help drive traffic to the website. The homepage to the event provided insight into the value behind the project, which then linked off to city specific pages providing event specifics and FAQs.
 						</p>
+						<h4>Results</h4>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							The results were overwhelmingly positive. With 7 events and 4.7k attendees, 72 local vendors were hired and 45 community groups engaged. The social reach exceeded 505k and media impressions totaled 357M. We were featured in the New York Times, CBS News, and The New York Business Journal to name a few.
 						</p>
 					</div>
 				</div>
@@ -84,12 +88,11 @@ const OMFMainStreet = () => {
 
 				<div className="w3-row">
 					<div className="w3-col s12 w3-center">
-						<h4>SWAG/Environment Details</h4>
+						<h4>Branded Assets</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
-						</p>
+							After the initial design direction was established, my team built out all branded assets for the Made on Main Street events. Starting with promotional materials to build awareness of the festivals, including post cards sent to previous, existing and prospective customers, fliers handed out in local branches, street banners, posters displayed in local store fronts, direct mail advertisements and van wraps to build local hype.						</p>
 						<p>
-							Quisque facilisis lacus vitae erat interdum, sed facilisis purus semper. Maecenas sit amet metus quam. Etiam non ipsum libero. Donec eros mauris, efficitur eget nibh et, dictum blandit sem. Fusce laoreet sagittis tellus consectetur pretium. Nunc dictum dui in sem porta, vehicula dignissim nibh blandit. In urna est, finibus et consequat eu, egestas quis ipsum. Curabitur viverra, arcu in facilisis rutrum, ex sapien placerat mi, eu hendrerit lacus massa non elit. Curabitur ultrices semper augue vitae eleifend. Cras laoreet ante et nunc aliquam egestas. Sed elementum aliquet ante quis finibus. Vivamus orci purus, gravida in justo ut, rhoncus ullamcorper lorem. Praesent a mollis nulla.
+							Additionally we designed all of the materials for the day of the event, including booth activation tents, road and activity station signage, stage backdrops, photo booth backdrops, interactive murals, temporary tattoo stations, etc. We also designed all event giveaways including tees, balloons, pens/pencils, hats, bags, buttons, pennants and sunglasses.
 						</p>
 					</div>
 				</div>
@@ -109,7 +112,7 @@ const OMFMainStreet = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Roles and Responsibilities</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Creative Direction, Design Direction, Visual Design, UX Design, Creative Strategy & Concept Development
 						</p>
 					</div>
 				</div>
@@ -118,7 +121,15 @@ const OMFMainStreet = () => {
 					<div className="w3-col s12 w3-center">
 						<h4>Team Credits</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue ullamcorper, egestas libero eget, vehicula felis. Ut pharetra viverra orci. Aliquam non turpis ac lorem molestie facilisis. Vivamus eu ornare nisi. Fusce vulputate luctus ex, a tincidunt magna vestibulum vitae. Sed sagittis mi sem, at lacinia est laoreet vitae. Phasellus tincidunt nulla eget sollicitudin pellentesque. Suspendisse mattis quis nisl vitae scelerisque. Cras tempor egestas viverra.
+							Amara Waters - Creative Director Copy<br/>
+							Sharon Kane - Art Director<br/>
+							Jason Evans - Sr. Designer<br/>
+							Zac Willett - Designer<br/>
+							Courtney Beeker - Project Manager<br/>
+							Tara Jacoby - Illustrator<br/><br/>
+
+							Pressure Point Creative - Experiential Production<br/>
+							Main Street America - Grant Program Partnership<br/>
 						</p>
 					</div>
 				</div>

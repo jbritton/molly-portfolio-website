@@ -24,16 +24,6 @@ class Gallery extends React.Component {
 
 	componentDidMount() {
 		this.preloadImages();
-		this.scrollToTop();
-	}
-
-	componentDidUpdate() {
-		this.scrollToTop();
-	}
-
-// TODO: fix this functionality
-	scrollToTop(){
-		this.appContent.scrollTop = 0;
 	}
 
 	getImagePath(image) {

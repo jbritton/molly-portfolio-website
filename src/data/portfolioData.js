@@ -251,28 +251,28 @@ export const portfolioData = {
 		type: DIRECTOR_TYPE,
 		link: 'One Main Brand',
 		path: '/omf-brand',
-		thumbnail: null,
+		thumbnail: 'PORTFOLIO_TILES_BRAND.jpg',
 		renderer: () => <OMFBrand/>
 	},
 	omfEmail: {
 		type: DIRECTOR_TYPE,
 		link: 'One Main Email',
 		path: '/omf-email',
-		thumbnail: null,
+		thumbnail: 'PORTFOLIO_TILES_EMAIL.jpg',
 		renderer: () => <OMFEmail/>
 	},
 	omfMainStreet: {
 		type: DIRECTOR_TYPE,
 		link: 'One Main MOMS',
 		path: '/omf-main-street',
-		thumbnail: null,
+		thumbnail: 'PORTFOLIO_TILES_MOMS.jpg',
 		renderer: () => <OMFMainStreet/>
 	},
 	omfWeb: {
 		type: DIRECTOR_TYPE,
 		link: 'One Main Web',
 		path: '/omf-web',
-		thumbnail: null,
+		thumbnail: 'PORTFOLIO_TILES_WEB.jpg',
 		renderer: () => <OMFWeb/>
 	}
 };
