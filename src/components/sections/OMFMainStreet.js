@@ -64,7 +64,7 @@ const OMFMainStreet = () => {
 						<p>
 							To help promote and provide details for each event we built individual landing pages hosted on omf.com for each city’s festival. We also leveraged our social platforms to encourage customer engagement and help drive traffic to the website. The homepage to the event provided insight into the value behind the project, which then linked off to city specific pages providing event specifics and FAQs.
 						</p>
-						<h4>Results</h4>
+						<h2 className="project-subheader">Results</h2>
 						<p>
 							The results were overwhelmingly positive. With 7 events and 4.7k attendees, 72 local vendors were hired and 45 community groups engaged. The social reach exceeded 505k and media impressions totaled 357M. We were featured in the New York Times, CBS News, and The New York Business Journal to name a few.
 						</p>
@@ -109,16 +109,12 @@ const OMFMainStreet = () => {
 
 
 				<div className="w3-row">
-					<div className="w3-col s12 project-section">
+					<div className="w3-col s12 project-credits">
 						<h2 className="project-subheader">Roles and Responsibilities</h2>
 						<p>
 							Creative Direction, Design Direction, Visual Design, UX Design, Creative Strategy & Concept Development
 						</p>
-					</div>
-				</div>
 
-				<div className="w3-row">
-					<div className="w3-col s12 project-section">
 						<h2 className="project-subheader">Team Credits</h2>
 						<p>
 							Amara Waters - Creative Director Copy<br/>

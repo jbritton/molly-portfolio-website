@@ -101,12 +101,8 @@ class Gallery extends React.Component {
 		return (
 			<section className="app-content" ref={(element) => { this.appContent = element; }}>
 				<div className="gallery-viewport w3-center">
-					{/*<div className="gallery-header">*/}
-						{/*<h5>{this.state.title}</h5>*/}
-						{/*<span>{this.state.subtitle}</span>*/}
-					{/*</div>*/}
-					<h1 className="project-header">{this.state.title}</h1>
 					<h2 className="project-subheader">{this.state.subtitle}</h2>
+					<h1 className="project-header">{this.state.title}</h1>
 					<div className="w3-white">
 						{this.renderGalleryImage()}
 					</div>

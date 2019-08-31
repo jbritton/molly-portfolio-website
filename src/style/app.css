@@ -20,6 +20,10 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     cursor: pointer;
 }
 
+img {
+    margin-bottom: -10px;
+}
+
 /* navigation styles */
 .nav-header {
     height: 5vh;
@@ -99,14 +103,6 @@ footer {
 
 
 /* gallery styles */
-.gallery-header {
-    padding-top: 0px;
-    padding-bottom: 36px;
-
-    h5 {
-        margin-bottom: 0px;
-    }
-}
 
 .gallery-link {
     border: 0px;
@@ -117,7 +113,7 @@ footer {
         border: 0px;
         opacity: 1.0;
         transition: opacity 0.5s linear;
-        margin-bottom: -7px;
+        margin-bottom: -10px;
     }
 
     .label {
@@ -153,10 +149,14 @@ footer {
 }
 
 
-/* omf project styles */
-.project-section {
+/*  project styles */
+.project-section, .project-credits {
     padding: 60px 80px 80px 80px;
     font-size: 14px;
+
+    .project-subheader:not(:first-of-type) {
+        margin-top: 60px;
+    }
 }
 
 .project-header {
@@ -172,13 +172,11 @@ footer {
     font-size: 14px;
 }
 
-.project-roles {
-
+.project-credits {
+    text-align: center;
+    color: #8f8f8f;
 }
 
-.project-team {
-
-}
 
 
 

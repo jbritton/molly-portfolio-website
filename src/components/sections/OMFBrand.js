@@ -219,16 +219,11 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 project-section">
+					<div className="w3-col s12 project-credits">
 						<h2 className="project-subheader">Roles and Responsibilities</h2>
 						<p>
 							Creative Direction, Design Direction, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
-					</div>
-				</div>
-
-				<div className="w3-row">
-					<div className="w3-col s12 project-section">
 						<h2 className="project-subheader">Team Credits</h2>
 						<p>
 							Amara Waters - Creative Director Copy<br/>
