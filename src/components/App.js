@@ -12,10 +12,12 @@ import OMFWeb from './sections/OMFWeb';
 
 class App extends Component {
 
+    componentDidMount() {
+        window.onhashchange = this.scrollToTop.bind(this);
+    }
+
     componentDidUpdate() {
         this.scrollToTop();
-
-        window.onhashchange = this.scrollToTop().bind(this);
     }
 
     scrollToTop(){

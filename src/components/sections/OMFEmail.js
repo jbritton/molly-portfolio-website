@@ -11,9 +11,9 @@ const OMFEmail = () => {
 					</div>
 				</div>
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Creative Direction, Design Direction, Branding, Visual Design</h4>
-						<h1>OneMain Financial Email Redesign</h1>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Creative Direction, Design Direction, Branding, Visual Design</h2>
+						<h1 className="project-header">OneMain Financial Email Redesign</h1>
 						<p>
 							One of the first goals I had at OneMain, was to improve the email design structure, which was lacking consistency and brand recognition. The header and footer were not standardized, there were no guidelines for font usage, spacing, padding, body width, headlines, subheads, CTAs, etc. As a result, each email looked like it was coming from a different company.
 						</p>
@@ -29,8 +29,8 @@ const OMFEmail = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Redesign Details</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Redesign Details</h2>
 						<p>
 							Based on the existing email criteria and categories, we tested in to 2 rounds of creative. For the first round we created 8 different individual templates that worked as a family of designs. The idea was that the project requestor could select a design from those options based on the criteria of the assignment.
 						</p>
@@ -51,8 +51,8 @@ const OMFEmail = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Templates</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Templates</h2>
 						<p>
 							In the initial redesign, we used the straight across tagline logo lockup, centered on a white header. A hero image space was allotted for 4 of the designs, which would be used  primarily for solicitation emails. We provided 4 different hero image layouts, for icon use, non-icon use, additional information sections, and horizontal vs. vertical stacks. There were 2 designs dedicated to the Rewards Program, enrollment and engagement, and 2 text only templates designed for non-solicitation sends.
 						</p>
@@ -68,8 +68,8 @@ const OMFEmail = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Mobile</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Mobile</h2>
 						<p>
 							The final templates were better optomized for mobile display, editing image and text size/orientation to scale responsively. The body section margins were dropped for mobile, but all other design details would appear consistent across all devices.
 						</p>
@@ -87,8 +87,8 @@ const OMFEmail = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Roles and Responsibilities</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Roles and Responsibilities</h2>
 						<p>
 							Creative Direction, Design Direction, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
@@ -96,8 +96,8 @@ const OMFEmail = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Team Credits</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Team Credits</h2>
 						<p>
 							Amara Waters - Creative Director Copy<br/>
 							Sharon Kane - Art Director<br/>

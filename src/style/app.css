@@ -2,24 +2,23 @@
 
 /* typography styles */
 @font-face {
-    font-family: BertholdAkzidenz;
-    src: url('./font/BertholdAkzidenzGroteskBERoman.ttf');
-}
-
-@font-face {
-    font-family: BertholdAkzidenzCondensed;
-    src: url('./font/BertholdAkzidenzGroteskCondensed.otf') format('opentype');
+    font-family: AvenirNextLTProDemo;
+    src: url('./font/AvenirNextLTPro-Demi.otf');
 }
 
 body {
     color: #555555;
-    font-family: BertholdAkzidenz;
+    font-family: AvenirNextLTProDemo;
 }
 
 body, h1, h2, h3, h4, h5, h6, a, p, span {
-    font-family: BertholdAkzidenz,Arial,sans-serif;
+    font-family: AvenirNextLTProDemo,Arial,sans-serif;
 }
 
+/* global util */
+.cursor-pointer {
+    cursor: pointer;
+}
 
 /* navigation styles */
 .nav-header {
@@ -54,11 +53,22 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     margin: auto;
 }
 
+.top-anchor {
+    height: 40px;
+}
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 48px;
+}
+
+
+/* about section */
 .about-content {
     text-transform: none;
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: BertholdAkzidenzCondensed,Arial,sans-serif;
+        font-family: AvenirNextLTProDemo,Arial,sans-serif;
     }
 
     h1 {
@@ -85,6 +95,8 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
         font-size: 13px;
     }
 }
+
+
 
 /* gallery styles */
 .gallery-header {
@@ -140,16 +152,33 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     }
 }
 
-.top-anchor {
-    height: 40px;
+
+/* omf project styles */
+.project-section {
+    padding: 60px 80px 80px 80px;
+    font-size: 14px;
 }
 
-.cursor-pointer {
-    cursor: pointer;
+.project-header {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
-footer {
-    margin-top: 60px;
-    margin-bottom: 48px;
+.project-subheader {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 14px;
 }
+
+.project-roles {
+
+}
+
+.project-team {
+
+}
+
+
 

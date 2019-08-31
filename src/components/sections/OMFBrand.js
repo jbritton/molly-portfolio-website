@@ -12,9 +12,9 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Creative Strategy, Creative Direction, Brand Design, Design Systems, Visual Design</h4>
-						<h1>OneMain Financial Rebrand</h1>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Creative Strategy, Creative Direction, Brand Design, Design Systems, Visual Design</h2>
+						<h1 className="project-header">OneMain Financial Rebrand</h1>
 						<p>
 							OneMain has provided loans and other credit-related products to more than 10 million customers in 44 states for more than 100 years, helping hard working people tackle life’s challenges.
 						</p>
@@ -36,8 +36,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Brand Details</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Brand Details</h2>
 						<p>
 							When I joined the group we were facing some unique challenges. The newly assigned AOR, hired to work on the rebrand, was initially tasked with creating a brand campaign prior to tackling the pillars of a full rebrand.  There was some difficulty separating the campaign specific creative direction, and the remaining underdeveloped creative components that would need to be unique to the OneMain brand, not the brand campaign.
 						</p>
@@ -53,8 +53,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Logo</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Logo</h2>
 						<p>
 							The former OneMain logo incorporated the old tagline "Lending Made Personal” into a lockup , as well as a symbol representing a cul-de-sac of houses as a nod to "main street”, the inspiration behind the company’s name. When addressing the logo during the rebrand, the decision was made to keep the word mark in the native typeface, FS Albert, as the branch signage would remain untouched for the foreseeable future. We wanted to preserve the relationship of the logo in all marketing materials with the already recognizable signage and reduce any future confusion.
 						</p>
@@ -73,8 +73,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Brand Campaign, TV</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Brand Campaign, TV</h2>
 						<p>
 							The Lending Done Human brand campaign would be the first major TV spot in the company’s history. It had already been established that our branches were the company’s biggest differentiator, so the objective was to spotlight the employees that work in those branches. The goal was to feature the loan specialists as extraordinary people who take the extra time to help their customers. We produced 2, 30 second spots that would run in 6 test markets.
 						</p>
@@ -108,8 +108,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Typography</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Typography</h2>
 						<p>
 							We selected Avenir Next as our primary font, to replace the former logo font, FS Albert, which was also used in all communications. Avinir Next is a sans-serif typeface that takes inspiration from the geometric style of sans-serif typefaces developed in the 1920s. It encourages trust, reflects our personality and reinforces our strengths as a brand.
 						</p>
@@ -138,8 +138,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Color</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Color</h2>
 						<p>
 							For the new color palette, we dug into the history of the brand. Inspired by the year 1912, when OneMain Financial was founded, we decided the idea of a neighborhood and the way colors painted a town in 1912 communicated the optimism of the times. The values and history of the OneMain Financial brand were important considerations during this exercise.
 						</p>
@@ -170,8 +170,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Photography</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Photography</h2>
 						<p>
 							The marketing creative in the financial industry, is heavily reliant on stock photography. We knew we couldn’t get around that, but also knew that we needed to establish a set of guidelines that would elevate the level of quality in photography selection, editing, and be ownable for the brand. The photography that was being used prior to the rebrand was very posed, unnatural, and disconnected.
 						</p>
@@ -192,8 +192,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Iconography/Illustration</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Iconography/Illustration</h2>
 						<p>
 							After the color, typography and photography categories were settling into a good place, we still felt like something was missing to fully bring the brand to life. The concept of "human touch” had already been integrated into the logo lockup, so it seemed like a natural fit to find a place for illustration within the brand. We also knew there was a need for iconography across all marketing channels to follow UX best practices and aid in guided communications.
 						</p>
@@ -219,8 +219,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Roles and Responsibilities</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Roles and Responsibilities</h2>
 						<p>
 							Creative Direction, Design Direction, Visual Design, Creative Strategy & Ideation, Team Management
 						</p>
@@ -228,8 +228,8 @@ const OMFBrand = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Team Credits</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Team Credits</h2>
 						<p>
 							Amara Waters - Creative Director Copy<br/>
 							Sharon Kane - Art Director<br/>

@@ -11,9 +11,9 @@ const OMFMainStreet = () => {
 					</div>
 				</div>
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Creative Direction, Design Direction, Visual Design, UX design, Creative Strategy & Concept Development</h4>
-						<h1>Made on Main Street National Event</h1>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Creative Direction, Design Direction, Visual Design, UX design, Creative Strategy & Concept Development</h2>
+						<h1 className="project-header">Made on Main Street National Event</h1>
 						<p>
 							OneMain partnered with Main Street America to provide a grant program that supports the Main Street movement, the leading voice for community revitalization across the country. The mission was to provide the opportunity to renew the downtown areas of the selected winners and subsequently transform their economies, leverage local leadership, and improve overall quality of life. The grant program, alongside a celebratory event series, sought to bring lasting change and social offerings to the communities that OneMain serves.
 						</p>
@@ -29,8 +29,8 @@ const OMFMainStreet = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Creative Details</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Creative Details</h2>
 						<p>
 							I was asked to help craft an overarching design strategy that would reflect the initiatives of the Main Street mission and translate into a flexible visual aesthetic that could span multiple deliverables. Amara Waters, Creative Director of Copy, and I worked closely with the project manager to develop a system that fit the needs of the program but also felt relatable to our customers and residents of the towns where each event would be held.
 						</p>
@@ -59,8 +59,8 @@ const OMFMainStreet = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Digital Presence</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Digital Presence</h2>
 						<p>
 							To help promote and provide details for each event we built individual landing pages hosted on omf.com for each city’s festival. We also leveraged our social platforms to encourage customer engagement and help drive traffic to the website. The homepage to the event provided insight into the value behind the project, which then linked off to city specific pages providing event specifics and FAQs.
 						</p>
@@ -87,8 +87,8 @@ const OMFMainStreet = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Branded Assets</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Branded Assets</h2>
 						<p>
 							After the initial design direction was established, my team built out all branded assets for the Made on Main Street events. Starting with promotional materials to build awareness of the festivals, including post cards sent to previous, existing and prospective customers, fliers handed out in local branches, street banners, posters displayed in local store fronts, direct mail advertisements and van wraps to build local hype.						</p>
 						<p>
@@ -109,8 +109,8 @@ const OMFMainStreet = () => {
 
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Roles and Responsibilities</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Roles and Responsibilities</h2>
 						<p>
 							Creative Direction, Design Direction, Visual Design, UX Design, Creative Strategy & Concept Development
 						</p>
@@ -118,8 +118,8 @@ const OMFMainStreet = () => {
 				</div>
 
 				<div className="w3-row">
-					<div className="w3-col s12 w3-center">
-						<h4>Team Credits</h4>
+					<div className="w3-col s12 project-section">
+						<h2 className="project-subheader">Team Credits</h2>
 						<p>
 							Amara Waters - Creative Director Copy<br/>
 							Sharon Kane - Art Director<br/>
