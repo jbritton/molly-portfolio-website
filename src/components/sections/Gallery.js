@@ -56,19 +56,23 @@ class Gallery extends React.Component {
 	}
 
 	renderNavLinks() {
-		return this.state.images.map((image, index) => {
-			const displayIndex = index + 1;
-			const activeClass = (this.state.currentIndex === index) ? 'w3-black' : 'w3-light-gray';
-			const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
-			return (
-				<button key={index} className={classNames}
-				        onClick={() => {
-					        this.goToImage(index);
-				        }}>
-					{displayIndex}
-				</button>
-			);
-		});
+		if (this.state.images && this.state.images.length > 1) {
+			return this.state.images.map((image, index) => {
+				const displayIndex = index + 1;
+				const activeClass = (this.state.currentIndex === index) ? 'w3-black' : 'w3-light-gray';
+				const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
+				return (
+					<button key={index} className={classNames}
+					        onClick={() => {
+						        this.goToImage(index);
+					        }}>
+						{displayIndex}
+					</button>
+				);
+			});
+		}else{
+			return null;
+		}
 	}
 
 	renderNavControls() {
@@ -85,8 +89,9 @@ class Gallery extends React.Component {
 					</button>
 				</div>
 			);
+		}else{
+			return null;
 		}
-		return null;
 	}
 
 	renderGalleryImage() {
@@ -99,7 +104,8 @@ class Gallery extends React.Component {
 
 	render() {
 		return (
-			<section className="app-content" ref={(element) => { this.appContent = element; }}>
+			<section className="app-content portfolio-gallery"
+			         ref={(element) => { this.appContent = element; }}>
 				<div className="gallery-viewport w3-center">
 					<h2 className="project-subheader">{this.state.subtitle}</h2>
 					<h1 className="project-header">{this.state.title}</h1>

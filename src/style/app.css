@@ -26,29 +26,52 @@ img {
 
 /* navigation styles */
 .nav-header {
-    height: 5vh;
-    opacity: 0.98;
-    text-transform: uppercase;
+
+    .nav-bar {
+        background: #fff;
+        opacity: 0.99;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
 
     button {
         text-transform: uppercase;
     }
 
     .w3-button {
-        width: 180px;
+        width: 200px;
+        padding: 16px;
     }
 
     i.fa-caret-down {
-        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    .w3-dropdown-content .w3-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .w3-dropdown-hover:hover > .w3-button:first-child {
+        background-color: #fff;
     }
 }
 
 
+
+
 /* layout styles */
 .main-content {
-    height: 95vh;
+    /*height: 95vh;*/
     width: 100%;
-    overflow: scroll;
+    /*overflow: scroll;*/
     padding-top: 64px;
 }
 
@@ -106,47 +129,26 @@ footer {
 
 .gallery-link {
     border: 0px;
-    text-decoration: none;
-    font-size: 16px;
+
+    /* animate styles */
+    /*overflow: hidden;*/
 
     img {
         border: 0px;
         opacity: 1.0;
         transition: opacity 0.5s linear;
         margin-bottom: -10px;
+
+        /* animate styles */
+        /*transition: transform .5s ease;*/
     }
 
-    .label {
-        opacity: 0.0;
-        transition: opacity 1s;
-        font-weight: bold;
-    }
-
-    &:hover {
-        img {
-            opacity: 0.2;
-        }
-
-        .label {
-            color: black;
-            opacity: 1.0;
-        }
-    }
-
-    .label-large {
-        font-size:30px;
-    }
+    /*&:hover img {*/
+        /*transform: scale(1.1);*/
+    /*}*/
 }
 
-@media (max-width:600px){
-    .gallery-link {
-        font-size: 10px;
-    }
 
-    .gallery-link .label-large {
-        font-size: 16px;
-    }
-}
 
 
 /*  project styles */
@@ -161,7 +163,7 @@ footer {
 
 .project-header {
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
     margin-bottom: 40px;
 }
 
@@ -175,8 +177,52 @@ footer {
 .project-credits {
     text-align: center;
     color: #8f8f8f;
+    font-size: 11px;
+}
+
+.portfolio-title {
+
+    padding: 50px 0;
+
+    .project-header {
+        margin-top: 0;
+    }
+
+    .project-subheader {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
 }
 
 
+/* creative direction section styles */
+.commercial-video:hover, .commercial-video:focus {
+    outline: none;
+}
 
+.commercial-stills {
+    padding: 25px 150px;
+}
 
+.commercial-stills-last {
+    padding-bottom: 0;
+}
+
+.photography-stills {
+    padding: 0px 125px 50px 125px;
+}
+
+/* design gallery section styles */
+.portfolio-gallery {
+    padding: 50px 0;
+
+    .project-header {
+        margin-top: 0;
+    }
+
+    .project-subheader {
+        margin-bottom: 0;
+    }
+
+}

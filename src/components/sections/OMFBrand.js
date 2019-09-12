@@ -88,22 +88,36 @@ const OMFBrand = () => {
 				</div>
 				<div className="w3-row">
 					<div className="w3-col s12">
-						<img src="assets/full/BRAND_COMMERCIAL1_STILL.jpg" className="w3-image" />
+						<video width="100%"
+						       className="commercial-video"
+						       poster="assets/full/BRAND_COMMERCIAL1_STILL.jpg"
+						       controls>
+							<source src="assets/video/1-LAURA_DUNN.mp4" type="video/mp4" />
+						</video>
 					</div>
 				</div>
 				<div className="w3-row">
 					<div className="w3-col s12">
-						<img src="assets/full/BRAND_COMMERCIAL1_STILLS_ALL.jpg" className="w3-image" />
+						<div className="commercial-stills">
+							<img src="assets/full/BRAND_COMMERCIAL1_STILLS_ALL.jpg" className="w3-image" />
+						</div>
 					</div>
 				</div>
 				<div className="w3-row">
 					<div className="w3-col s12">
-						<img src="assets/full/BRAND_COMMERCIAL2_STILL.jpg" className="w3-image" />
+						<video width="100%"
+						       className="commercial-video"
+						       poster="assets/full/BRAND_COMMERCIAL2_STILL.jpg"
+						       controls>
+							<source src="assets/video/2-LU_CARDOSO.mp4" type="video/mp4" />
+						</video>
 					</div>
 				</div>
 				<div className="w3-row">
 					<div className="w3-col s12">
-						<img src="assets/full/BRAND_COMMERCIAL2_STILLS_ALL.jpg" className="w3-image" />
+						<div className="commercial-stills commercial-stills-last">
+							<img src="assets/full/BRAND_COMMERCIAL2_STILLS_ALL.jpg" className="w3-image" />
+						</div>
 					</div>
 				</div>
 
@@ -182,7 +196,9 @@ const OMFBrand = () => {
 				</div>
 				<div className="w3-row">
 					<div className="w3-col s12">
-						<img src="assets/full/BRAND_PHOTOS_BEFORE_AFTER.jpg" className="w3-image" />
+						<div className="photography-stills">
+							<img src="assets/full/BRAND_PHOTOS_BEFORE_AFTER.jpg" className="w3-image" />
+						</div>
 					</div>
 				</div>
 				<div className="w3-row">

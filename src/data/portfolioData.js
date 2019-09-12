@@ -34,7 +34,7 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Arris Project, First Baltimore Crafted Collection';
 			const subtitle = 'Photography Art Director, Lead Designer';
-			const images = ['Portfolio_Arris.jpg', 'Portfolio_Arris_Email.jpg', 'Portfolio_iPhone_Arris.jpg'];
+			const images = [['Portfolio_Arris.jpg', 'Portfolio_iPhone_Arris.jpg'], 'Portfolio_Arris_Email.jpg'];
 			return (
 				<Gallery title={title}
 				         subtitle={subtitle}
@@ -249,29 +249,29 @@ export const portfolioData = {
 	},
 	omfBrand: {
 		type: DIRECTOR_TYPE,
-		link: 'One Main Brand',
-		path: '/omf-brand',
+		link: 'Brand',
+		path: '/brand',
 		thumbnail: 'PORTFOLIO_TILES_BRAND.jpg',
 		renderer: () => <OMFBrand/>
 	},
 	omfEmail: {
 		type: DIRECTOR_TYPE,
-		link: 'One Main Email',
-		path: '/omf-email',
+		link: 'Email',
+		path: '/email',
 		thumbnail: 'PORTFOLIO_TILES_EMAIL.jpg',
 		renderer: () => <OMFEmail/>
 	},
 	omfMainStreet: {
 		type: DIRECTOR_TYPE,
-		link: 'One Main MOMS',
-		path: '/omf-main-street',
+		link: 'Events',
+		path: '/events',
 		thumbnail: 'PORTFOLIO_TILES_MOMS.jpg',
 		renderer: () => <OMFMainStreet/>
 	},
 	omfWeb: {
 		type: DIRECTOR_TYPE,
-		link: 'One Main Web',
-		path: '/omf-web',
+		link: 'Web',
+		path: '/web',
 		thumbnail: 'PORTFOLIO_TILES_WEB.jpg',
 		renderer: () => <OMFWeb/>
 	}

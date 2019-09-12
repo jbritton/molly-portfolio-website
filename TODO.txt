@@ -1,5 +1,0 @@
-
-
-1) Domain name - link CNAME
-2) Preload gallery section images
-3) Scale text size on home page (Small, Large)

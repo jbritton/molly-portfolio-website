@@ -4,7 +4,7 @@
   "description": "A portfolio gallery",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist/bundle.js dist/style.css dist/index.html",
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production webpack -p",
     "dev": "webpack-dev-server",

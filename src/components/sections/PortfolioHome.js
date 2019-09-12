@@ -7,7 +7,7 @@ const renderTile = ({path, link, linkSize, thumbnail}) => {
     const textSize = (linkSize === 'L')? 'label-large' : '';
     const linkClasses = 'label ' + textSize;
     return (
-        <div className="w3-display-container">
+        <div className="gallery-link-container">
             <Link to={path} className="gallery-link">
                 <img src={`assets/tiles/${thumbnail}`}
                      className="w3-image" />
@@ -18,15 +18,12 @@ const renderTile = ({path, link, linkSize, thumbnail}) => {
 
 const PortfolioHome = () => {
     return (
-        <section className="app-content">
-            <div className="w3-row" style={{'marginBottom': '40px'}}>
-                <div className="w3-col s4">&nbsp;</div>
-                <div className="w3-col s4">
-                    <img src="assets/logo.png" className="w3-image" />
-                </div>
-                <div className="w3-col s4">&nbsp;</div>
-            </div>
+        <section className="app-content portfolio-home">
 
+            <div className="portfolio-title">
+                <h2 className="project-subheader">Molly Britton</h2>
+                <h1 className="project-header">Creative Direction & Design</h1>
+            </div>
 
             <div className="w3-row">
                 <div className="w3-col s6">
