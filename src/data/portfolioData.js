@@ -1,9 +1,18 @@
 import React from 'react';
-import Gallery from '../components/sections/Gallery';
+import PortfolioGallery from '../components/sections/PortfolioGallery';
 import OMFBrand from '../components/sections/OMFBrand';
 import OMFEmail from '../components/sections/OMFEmail';
 import OMFMainStreet from '../components/sections/OMFMainStreet';
 import OMFWeb from '../components/sections/OMFWeb';
+
+function renderGallery(title, subtitle, images){
+	return (
+		<PortfolioGallery title={title}
+		         subtitle={subtitle}
+		         images={images}
+		/>
+	);
+}
 
 export const DESIGNER_TYPE = 'designer';
 export const DIRECTOR_TYPE = 'director';
@@ -18,12 +27,7 @@ export const portfolioData = {
 			const title = 'North America Gift Guide, 2015';
 			const subtitle = 'Photography Art Director, Designer';
 			const images = ['Portfolio_Holiday_0.jpg', 'Portfolio_Holiday_2.jpg', 'Portfolio_Holiday_1.jpg', 'Portfolio_Holiday_3.jpg', 'Portfolio_Holiday_4.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	arris: {
@@ -34,13 +38,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Arris Project, First Baltimore Crafted Collection';
 			const subtitle = 'Photography Art Director, Lead Designer';
-			const images = [['Portfolio_Arris.jpg', 'Portfolio_iPhone_Arris.jpg'], 'Portfolio_Arris_Email.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_Arris.jpg', 'Portfolio_Arris.jpg'], 'Portfolio_Arris_Email.jpg'];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	brazilInnovation: {
@@ -52,12 +51,7 @@ export const portfolioData = {
 			const title = 'Brazil Innovation Pages Design, 2014';
 			const subtitle = 'Lead UX and Visual Designer (Live Text Design with Parallax';
 			const images = ['Portfolio_Brazil_Innovation_2.jpg', 'Portfolio_Brazil_Innovation_3.jpg', 'Portfolio_Brazil_Innovation_4.jpg', 'Portfolio_Brazil_Innovation_1.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	iWill: {
@@ -68,13 +62,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'I Will What I Want Landing Page';
 			const subtitle = 'Photography Art Director, Designer';
-			const images = ['Portfolio_IWWIW.jpg', 'Portfolio_iPhone_IWWIW.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_IWWIW.jpg', 'Portfolio_IWWIW.jpg']];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	hockeyWorld: {
@@ -85,13 +74,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Hockey World Landing Page';
 			const subtitle = 'Designer';
-			const images = ['Portfolio_Hockey.jpg', 'Portfolio_iPhone_Hockey.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_Hockey.jpg', 'Portfolio_Hockey.jpg']];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	backToSchool: {
@@ -102,13 +86,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Back To School Landing Pages';
 			const subtitle = 'Photography Art Director, Designer';
-			const images = ['Portfolio_Backpacks_1.jpg', 'Portfolio_Backpacks_2.jpg', 'Portfolio_Backpacks_3.jpg', 'Portfolio_Backpacks_4.jpg', 'Portfolio_iPhone_Backpacks.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_Backpacks.jpg', 'Portfolio_Backpacks_1.jpg'], 'Portfolio_Backpacks_2.jpg', 'Portfolio_Backpacks_3.jpg', 'Portfolio_Backpacks_4.jpg'];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	euSiteLaunch: {
@@ -120,12 +99,7 @@ export const portfolioData = {
 			const title = 'EU Site Design Launch, 2014';
 			const subtitle = 'Lead UX and Visual Designer';
 			const images = ['Portfolio_HP_2.jpg', 'Portfolio_HP_1.jpg', 'Portfolio_HP_3.jpg', 'Portfolio_iPhone_HP_MB.jpg', 'Portfolio_iPhone_HP_MB_UK.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	euGiftGuide: {
@@ -137,12 +111,7 @@ export const portfolioData = {
 			const title = 'First EU Gift Guide, 2014';
 			const subtitle = 'Photography Art Director, Lead UX and Visual Designer';
 			const images = ['Portfolio_GiftGuide_1.jpg', 'Portfolio_GiftGuide_2.jpg', 'Portfolio_GiftGuide_3.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	paypal: {
@@ -154,12 +123,7 @@ export const portfolioData = {
 			const title = 'PayPal Print Design';
 			const subtitle = 'Visual Designer';
 			const images = ['Portfolio_PayPal.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	uniforms: {
@@ -170,13 +134,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'School Uniforms Landing Page';
 			const subtitle = 'Photography Art Director, Designer';
-			const images = ['Portfolio_Uniforms.jpg', 'Portfolio_iPhone_Uniforms.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_Uniforms.jpg', 'Portfolio_Uniforms.jpg']];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	footwear: {
@@ -187,13 +146,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Footwear Landing Pages and Email Assets';
 			const subtitle = 'Lead Designer';
-			const images = ['Portfolio_Spectrum_3.jpg', 'Portfolio_Spectrum_1.jpg', 'Portfolio_Spectrum_2.jpg', 'Portfolio_Spectrum_Email.jpg', 'Portfolio_Spectrum_Gemini_Email.jpg', 'Portfolio_iPhone_spectrum.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_spectrum.jpg', 'Portfolio_Spectrum_3.jpg'], 'Portfolio_Spectrum_1.jpg', 'Portfolio_Spectrum_2.jpg', 'Portfolio_Spectrum_Email.jpg', 'Portfolio_Spectrum_Gemini_Email.jpg'];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	cogenderUnderwear: {
@@ -205,12 +159,7 @@ export const portfolioData = {
 			const title = 'Co-Gender Underwear Site';
 			const subtitle = 'Photography Art Director, Lead Designer';
 			const images = ['Portfolio_Underwear.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	runWorld: {
@@ -221,13 +170,8 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Run World Landing Pages';
 			const subtitle = 'Photography Art Director, Designer';
-			const images = ['Portfolio_Run_1.jpg', 'Portfolio_Run_2.jpg', 'Portfolio_Run_4.jpg', 'Portfolio_Run_3.jpg', 'Portfolio_iPhone_Run.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			const images = [['Portfolio_iPhone_Run.jpg', 'Portfolio_Run_1.jpg'], 'Portfolio_Run_2.jpg', 'Portfolio_Run_4.jpg', 'Portfolio_Run_3.jpg'];
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	productStyling: {
@@ -239,12 +183,7 @@ export const portfolioData = {
 			const title = 'Product Styling and Email Marketing';
 			const subtitle = 'Photography Art Director, Lead Designer';
 			const images = ['Portfolio_Emails_1.jpg', 'Portfolio_Emails_2.jpg'];
-			return (
-				<Gallery title={title}
-				         subtitle={subtitle}
-				         images={images}
-				/>
-			);
+			return renderGallery(title, subtitle, images);
 		}
 	},
 	omfBrand: {

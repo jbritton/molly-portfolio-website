@@ -3,25 +3,16 @@
 
 
 - [ ] Mobile - hamburger menu
-- [ ] Create a stacked gallery component
 - [ ] Add zoom effect to image tiles
-- [ ] If possible, can we look at a new style for the page numbers and arrows on the design pages?
-- [ ] Stack mobile image on first page  
-    - [ ] Arris Project
-    - [ ] Back to school
-    - [ ] Footwear
-    - [ ] Hockey World
-    - [ ] I will what I want
-    - [ ] Run world
-    - [ ] Uniforms
 
 
 # BUGS
-- [ ] Fix positioning of gallery paging and next/prev controls
+- [x] Fix positioning/styling of gallery paging and next/prev controls
 - [ ] Add swipe handler on gallery for mobile
 - [ ] Fix scrolling issue
 - [ ] Proof read copy
 - [ ] Fix inconsistent padding after videos on brand page
+- [ ] Sort design menu alphabetically
 
 
 # Complete
@@ -42,3 +33,11 @@
 - [x] Padding for copy on new pages: roughly 100-125px between top and bottom of section and between headline and body copy
 - [x] Turn off hover effect on all tiles, and remove titles from the tiles
 - [x] Change all copy throughout website to Avenir Next LT Pro, demi
+- [x] Stack mobile image on first page  
+    - [x] Arris Project
+    - [x] Back to school
+    - [x] Footwear
+    - [x] Hockey World
+    - [x] I will what I want
+    - [x] Run world
+    - [x] Uniforms

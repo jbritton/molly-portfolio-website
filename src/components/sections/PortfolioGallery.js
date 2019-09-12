@@ -2,7 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Footer from '../Footer';
 
-class Gallery extends React.Component {
+
+function flatten(arr) {
+	return arr.reduce(function (flat, toFlatten) {
+		return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+	}, []);
+}
+
+
+class PortfolioGallery extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -31,8 +39,10 @@ class Gallery extends React.Component {
 	}
 
 	preloadImages() {
-		if (this.state.images.length > 0) {
-			const preloaded = this.state.images.map((image) => {
+		const images = flatten(this.state.images);
+
+		if (images.length > 0) {
+			const preloaded = images.map((image) => {
 				let preloadedImage = new Image();
 				preloadedImage.src = this.getImagePath(image);
 			}, this);
@@ -55,12 +65,13 @@ class Gallery extends React.Component {
 		this.setState({currentIndex: index, direction: 0});
 	}
 
-	renderNavLinks() {
+	renderPagingControls() {
 		if (this.state.images && this.state.images.length > 1) {
-			return this.state.images.map((image, index) => {
+
+			const renderPagingButton = (image, index) => {
 				const displayIndex = index + 1;
-				const activeClass = (this.state.currentIndex === index) ? 'w3-black' : 'w3-light-gray';
-				const classNames = 'w3-tag w3-border w3-border-gray w3-hover-black w3-opacity-min ' + activeClass;
+				const activeClass = (this.state.currentIndex === index) ? 'w3-blue' : 'w3-black';
+				const classNames = 'w3-button w3-hover-blue ' + activeClass;
 				return (
 					<button key={index} className={classNames}
 					        onClick={() => {
@@ -69,23 +80,31 @@ class Gallery extends React.Component {
 						{displayIndex}
 					</button>
 				);
-			});
+			};
+
+			return (
+				<div className="gallery-paging-controls">
+					{this.state.images.map(renderPagingButton)}
+				</div>
+			);
+
 		}else{
 			return null;
 		}
 	}
 
-	renderNavControls() {
+
+	renderScrollingControls() {
 		if (this.state.images && this.state.images.length > 1) {
 			return (
-				<div className="w3-xxlarge w3-opacity-min">
-					<button className="w3-button w3-display-left"
+				<div className="gallery-scrolling-controls">
+					<button className="w3-button w3-circle w3-black w3-hover-blue pull-left"
 					        onClick={this.previousImage}>
-						&#10094;
+						<i className="fa fa-chevron-left"></i>
 					</button>
-					<button className="w3-button w3-display-right"
+					<button className="w3-button w3-circle w3-black w3-hover-blue pull-right"
 					        onClick={this.nextImage}>
-						&#10095;
+						<i className="fa fa-chevron-right"></i>
 					</button>
 				</div>
 			);
@@ -94,12 +113,15 @@ class Gallery extends React.Component {
 		}
 	}
 
-	renderGalleryImage() {
-		const image = this.state.images[this.state.currentIndex];
-		return (
-			<img src={this.getImagePath(image)}
-			     className="w3-image w3-animate-opacity"/>
-		);
+	renderGallerySection() {
+		const gallerySection = this.state.images[this.state.currentIndex];
+		const images = (Array.isArray(gallerySection))? gallerySection : [ gallerySection ];
+		return images.map(image => {
+			return (
+				<img src={this.getImagePath(image)}
+				     className="w3-image w3-animate-opacity"/>
+			);
+		});
 	}
 
 	render() {
@@ -110,23 +132,31 @@ class Gallery extends React.Component {
 					<h2 className="project-subheader">{this.state.subtitle}</h2>
 					<h1 className="project-header">{this.state.title}</h1>
 					<div className="w3-white">
-						{this.renderGalleryImage()}
+						{this.renderGallerySection()}
 					</div>
 				</div>
-				{this.renderNavControls()}
-				<div className="w3-display-bottommiddle w3-bar w3-padding-16 w3-center">
-					{this.renderNavLinks()}
-				</div>
+
+				{this.renderScrollingControls()}
+				{this.renderPagingControls()}
+
+
+
+				{/*{this.renderNavControls()}*/}
+				{/*<div className="w3-display-bottommiddle w3-bar w3-padding-16 w3-center">*/}
+					{/*{this.renderNavLinks()}*/}
+				{/*</div>*/}
+
+
 				<Footer/>
 			</section>
 		);
 	}
 }
 
-Gallery.propTypes = {
+PortfolioGallery.propTypes = {
 	title: PropTypes.string.isRequired,
 	subtitle: PropTypes.string,
 	images: PropTypes.array.isRequired
 };
 
-export default Gallery;
+export default PortfolioGallery;

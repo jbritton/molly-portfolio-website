@@ -2,6 +2,20 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {portfolioData, DESIGNER_TYPE, DIRECTOR_TYPE} from '../data/portfolioData';
 
+
+function compareByProp(x1, x2, prop){
+	const prop1 = x1[prop];
+	const prop2 = x2[prop];
+	if(prop1 < prop2){
+		return -1;
+	}else if(prop1 > prop2){
+		return 1;
+	}else{
+		return 0;
+	}
+}
+
+
 export default class NavHeader extends React.Component {
 	constructor(props) {
 		super(props);
@@ -30,7 +44,9 @@ export default class NavHeader extends React.Component {
 	}
 
 	renderPortfolioLinks(type) {
-		const portfolioItems = Object.values(portfolioData).filter(item => (item.type === type));
+		const portfolioItems = Object.values(portfolioData)
+			.filter(item => (item.type === type))
+			.sort((x1, x2) => compareByProp(x1, x2, 'link'));
 		const portfolioLinks = portfolioItems.map((value, index) => {
 			const {path, link} = value;
 			return this.createDropdownLink(path, index, link);
