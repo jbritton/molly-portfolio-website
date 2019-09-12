@@ -129,6 +129,7 @@ footer {
 
 .gallery-link {
     border: 0px;
+    background: #000;
 
     /* animate styles */
     /*overflow: hidden;*/

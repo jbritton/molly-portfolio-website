@@ -13,7 +13,7 @@
 - [ ] Proof read copy
 - [ ] Fix inconsistent padding after videos on brand page
 - [ ] Sort design menu alphabetically
-
+- [ ] Stack EU Site Launch mobile images?
 
 # Complete
 - [x] Pad out the nav bar
