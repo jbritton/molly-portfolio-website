@@ -4,6 +4,7 @@
 
 - [ ] Mobile - hamburger menu
 - [ ] Add zoom effect to image tiles
+- [ ] Fix IP address in CNAME: https://mail.google.com/mail/u/0/#inbox/FMfcgxwDrHpMKwnqzkMqXfMcNgMWXDWS
 
 
 # BUGS
