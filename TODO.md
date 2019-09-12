@@ -14,6 +14,11 @@
 - [ ] Fix inconsistent padding after videos on brand page
 - [ ] Sort design menu alphabetically
 - [ ] Stack EU Site Launch mobile images?
+- [ ] Upgrade dependencies/fix security vulnerabilities
+- [x] Dropdown menu is hindered by scrolling controls
+
+
+
 
 # Complete
 - [x] Pad out the nav bar

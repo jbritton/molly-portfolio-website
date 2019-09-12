@@ -93,16 +93,26 @@ class PortfolioGallery extends React.Component {
 		}
 	}
 
+	renderPreviousControl(){
+		if (this.state.images && this.state.images.length > 1) {
+			return (
+				<button className="w3-button w3-circle w3-black w3-hover-blue gallery-scroll gallery-scroll-prev"
+				        onClick={this.previousImage}>
+					<i className="fa fa-chevron-left"></i>
+				</button>
 
-	renderScrollingControls() {
+			);
+		}else{
+			return null;
+		}
+	}
+
+	renderNextControl(){
 		if (this.state.images && this.state.images.length > 1) {
 			return (
 				<div className="gallery-scrolling-controls">
-					<button className="w3-button w3-circle w3-black w3-hover-blue pull-left"
-					        onClick={this.previousImage}>
-						<i className="fa fa-chevron-left"></i>
-					</button>
-					<button className="w3-button w3-circle w3-black w3-hover-blue pull-right"
+
+					<button className="w3-button w3-circle w3-black w3-hover-blue gallery-scroll gallery-scroll-next"
 					        onClick={this.nextImage}>
 						<i className="fa fa-chevron-right"></i>
 					</button>
@@ -136,7 +146,8 @@ class PortfolioGallery extends React.Component {
 					</div>
 				</div>
 
-				{this.renderScrollingControls()}
+				{this.renderPreviousControl()}
+				{this.renderNextControl()}
 				{this.renderPagingControls()}
 
 
