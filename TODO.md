@@ -1,6 +1,6 @@
 
 # TODO:
-- [ ] Zoom effect on tiles - CSS Grid homepage tiles?
+- [ ] Fix grid tile slicing
 - [ ] Mobile - hamburger menu
 
 # BUGS
@@ -11,6 +11,7 @@
 - [?] Stack EU Site Launch mobile images? (Molly to verify)
 
 # Complete
+- [x] Zoom effect on tiles - CSS Grid homepage tiles?
 - [x] Fix inconsistent padding after videos on brand page
 - [x] Fix scrolling issue
 - [x] Sort design menu alphabetically
