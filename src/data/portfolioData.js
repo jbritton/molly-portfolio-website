@@ -98,7 +98,7 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'EU Site Design Launch, 2014';
 			const subtitle = 'Lead UX and Visual Designer';
-			const images = ['Portfolio_HP_2.jpg', 'Portfolio_HP_1.jpg', 'Portfolio_HP_3.jpg', 'Portfolio_iPhone_HP_MB.jpg', 'Portfolio_iPhone_HP_MB_UK.jpg'];
+			const images = ['Portfolio_HP_2.jpg', 'Portfolio_HP_1.jpg', 'Portfolio_HP_3.jpg', ['Portfolio_iPhone_HP_MB.jpg', 'Portfolio_iPhone_HP_MB_UK.jpg']];
 			return renderGallery(title, subtitle, images);
 		}
 	},

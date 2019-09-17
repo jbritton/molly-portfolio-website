@@ -37,7 +37,7 @@ export default class NavHeader extends React.Component {
 		return (
 			<Link to={path} key={index}
 			      onClick={this.closeDropdown}
-			      className="w3-bar-item w3-button w3-text-black w3-hover-text-blue w3-hover-none">
+			      className="w3-bar-item w3-button">
 				{link}
 			</Link>
 		);
@@ -57,20 +57,20 @@ export default class NavHeader extends React.Component {
 	render() {
 		return (
 			<header className="nav-header w3-top">
-				<nav className="nav-bar w3-card-2">
-					<Link to="/" className="w3-button w3-hover-text-blue w3-hover-none">
+				<nav className="nav-bar">
+					<Link to="/" className="w3-button">
 						Home
 					</Link>
-					<div className="w3-dropdown-hover w3-hover-text-blue w3-hover-none">
-						<button className="w3-button w3-hover-text-blue w3-hover-none">
+					<div className="w3-dropdown-hover">
+						<button className="w3-button">
 							Creative Direction <i className="fa fa-caret-down"/>
 						</button>
 						<div className="w3-dropdown-content w3-bar-block w3-card-4">
 							{this.renderPortfolioLinks(DIRECTOR_TYPE)}
 						</div>
 					</div>
-					<div className="w3-dropdown-hover w3-hover-text-blue w3-hover-none">
-						<button className="w3-button w3-hover-text-blue w3-hover-none">
+					<div className="w3-dropdown-hover">
+						<button className="w3-button">
 							Design <i className="fa fa-caret-down"/>
 						</button>
 						<div className="w3-dropdown-content w3-bar-block w3-card-4">

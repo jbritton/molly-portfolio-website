@@ -1,26 +1,24 @@
 
 # TODO:
-
-
+- [ ] Zoom effect on tiles - CSS Grid homepage tiles?
 - [ ] Mobile - hamburger menu
-- [ ] Add zoom effect to image tiles
-
 
 # BUGS
-- [x] Fix positioning/styling of gallery paging and next/prev controls
 - [ ] Add swipe handler on gallery for mobile
-- [ ] Fix scrolling issue
 - [ ] Proof read copy
-- [ ] Fix inconsistent padding after videos on brand page
-- [ ] Sort design menu alphabetically
-- [ ] Stack EU Site Launch mobile images?
 - [ ] Upgrade dependencies/fix security vulnerabilities
-- [x] Dropdown menu is hindered by scrolling controls
 
-
-
+- [?] Stack EU Site Launch mobile images? (Molly to verify)
 
 # Complete
+- [x] Fix inconsistent padding after videos on brand page
+- [x] Fix scrolling issue
+- [x] Sort design menu alphabetically
+- [x] Fix positioning/styling of gallery paging and next/prev controls
+- [x] Dropdown menu is hindered by scrolling controls
+- [x] Gallery buttons - grey, light grey hover, remove circles
+- [x] Fix dropdown arrows
+- [x] Model nav off of Nike.com
 - [x] Pad out the nav bar
 - [x] Center the nav bar items
 - [x] Change hover style to apply to text instead of background (light or bright blue)

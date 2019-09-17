@@ -53,16 +53,24 @@ class PortfolioGallery extends React.Component {
 		let index = this.state.currentIndex + 1;
 		index = (index < this.state.images.length) ? index : 0;
 		this.setState({currentIndex: index, direction: 1});
+		this.scrollToTop();
 	}
 
 	previousImage() {
 		let index = this.state.currentIndex - 1;
 		index = (index >= 0) ? index : this.state.images.length - 1;
 		this.setState({currentIndex: index, direction: -1});
+		this.scrollToTop();
 	}
 
 	goToImage(index) {
 		this.setState({currentIndex: index, direction: 0});
+		this.scrollToTop();
+	}
+
+	scrollToTop(){
+		// cross-browser scroll to top
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
 
 	renderPagingControls() {
@@ -70,8 +78,8 @@ class PortfolioGallery extends React.Component {
 
 			const renderPagingButton = (image, index) => {
 				const displayIndex = index + 1;
-				const activeClass = (this.state.currentIndex === index) ? 'w3-blue' : 'w3-black';
-				const classNames = 'w3-button w3-hover-blue ' + activeClass;
+				const activeClass = (this.state.currentIndex === index) ? 'active-page-link' : 'page-link';
+				const classNames = 'w3-button ' + activeClass;
 				return (
 					<button key={index} className={classNames}
 					        onClick={() => {
@@ -96,11 +104,10 @@ class PortfolioGallery extends React.Component {
 	renderPreviousControl(){
 		if (this.state.images && this.state.images.length > 1) {
 			return (
-				<button className="w3-button w3-circle w3-black w3-hover-blue gallery-scroll gallery-scroll-prev"
+				<span className="gallery-scroll gallery-scroll-prev"
 				        onClick={this.previousImage}>
 					<i className="fa fa-chevron-left"></i>
-				</button>
-
+				</span>
 			);
 		}else{
 			return null;
@@ -112,10 +119,10 @@ class PortfolioGallery extends React.Component {
 			return (
 				<div className="gallery-scrolling-controls">
 
-					<button className="w3-button w3-circle w3-black w3-hover-blue gallery-scroll gallery-scroll-next"
+					<span className="gallery-scroll gallery-scroll-next"
 					        onClick={this.nextImage}>
 						<i className="fa fa-chevron-right"></i>
-					</button>
+					</span>
 				</div>
 			);
 		}else{
@@ -129,6 +136,7 @@ class PortfolioGallery extends React.Component {
 		return images.map(image => {
 			return (
 				<img src={this.getImagePath(image)}
+				     key={image}
 				     className="w3-image w3-animate-opacity"/>
 			);
 		});

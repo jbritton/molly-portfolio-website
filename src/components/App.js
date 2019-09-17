@@ -13,15 +13,13 @@ import OMFWeb from './sections/OMFWeb';
 class App extends Component {
 
     componentDidMount() {
-        window.onhashchange = this.scrollToTop.bind(this);
+        const onRouteChange = this.onRouteChange.bind(this);
+        window.onhashchange = onRouteChange;
     }
 
-    componentDidUpdate() {
-        this.scrollToTop();
-    }
-
-    scrollToTop(){
-        this.mainContent.scrollTop = 0;
+    onRouteChange(){
+        // cross-browser scroll to top
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
     renderPortfolioRoutes(){
