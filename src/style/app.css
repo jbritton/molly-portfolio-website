@@ -85,13 +85,9 @@ img {
 }
 
 
-
-
 /* layout styles */
 .main-content {
-    /*height: 95vh;*/
     width: 100%;
-    /*overflow: scroll;*/
     padding-top: 64px;
 }
 
@@ -108,6 +104,67 @@ footer {
     margin-top: 60px;
     margin-bottom: 48px;
 }
+
+
+
+
+
+/* portfolio home section */
+.portfolio-grid {
+    display: grid;
+    grid-template: repeat(7, auto) / repeat(12, 1fr);
+    grid-template-areas:
+        "a a a a a a b b b b b b"
+        "c c c c c c d d d d d d"
+        "e e e e e e f f f g g g"
+        "e e e e e e h h h i i i"
+        "j j j j j j k k k k k k"
+        "l l l l n n n n n n n n"
+        "m m m m n n n n n n n n"
+        "o o o o o o p p p p p p"
+        "q q q q q q r r r r r r";
+}
+
+.grid-a { grid-area: a; }
+.grid-b { grid-area: b; }
+.grid-c { grid-area: c; }
+.grid-d { grid-area: d; }
+.grid-e { grid-area: e; }
+.grid-f { grid-area: f; }
+.grid-g { grid-area: g; }
+.grid-h { grid-area: h; }
+.grid-i { grid-area: i; }
+.grid-j { grid-area: j; }
+.grid-k { grid-area: k; }
+.grid-l { grid-area: l; }
+.grid-m { grid-area: m; }
+.grid-n { grid-area: n; }
+.grid-o { grid-area: o; }
+.grid-p { grid-area: p; }
+.grid-q { grid-area: q; }
+.grid-r { grid-area: r; }
+
+
+.portfolio-link {
+    display: block;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: none;
+        transform: scale(1);
+        transition: all 1s;
+    }
+
+    &:hover img {
+         transform:scale(1.15);
+     }
+}
+
+
+
 
 
 /* about section */
@@ -146,28 +203,6 @@ footer {
 
 
 /* gallery styles */
-
-.gallery-link {
-    border: 0px;
-    background: #000;
-
-    /* animate styles */
-    /*overflow: hidden;*/
-
-    img {
-        border: 0px;
-        opacity: 1.0;
-        transition: opacity 0.5s linear;
-        margin-bottom: -10px;
-
-        /* animate styles */
-        /*transition: transform .5s ease;*/
-    }
-
-    /*&:hover img {*/
-        /*transform: scale(1.1);*/
-    /*}*/
-}
 
 .gallery-scroll {
     z-index: 1;
