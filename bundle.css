@@ -4021,8 +4021,8 @@ img {
   font-size: 13px;
 }
 
-.nav-header .w3-dropdown-hover:hover > .w3-button:first-child {
-  background-color: #fff;
+.nav-header .w3-dropdown-click:hover > .w3-button:first-child {
+  background-color: #fff !important;
 }
 
 /* layout styles */
