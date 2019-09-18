@@ -22,21 +22,40 @@ export default class NavHeader extends React.Component {
 
 		// init state
 		this.state = {
-			dropdownOpen: false
+			designDropdownOpen: false,
+			directionDropdownOpen: false
 		};
 
 		// bind handlers
-		this.closeDropdown = this.closeDropdown.bind(this);
+		this.toggleDesignDropdown = this.toggleDesignDropdown.bind(this);
+		this.toggleDirectionDropdown = this.toggleDirectionDropdown.bind(this);
+		this.closeAllDropdowns = this.closeAllDropdowns.bind(this);
+
 	}
 
-	closeDropdown() {
-		this.setState({dropdownOpen: false});
+	toggleDesignDropdown(){
+		console.log('toggleDesignDropdown');
+		const designDropdownOpen = !this.state.designDropdownOpen;
+		this.setState({ designDropdownOpen });
+	}
+
+	toggleDirectionDropdown(){
+		console.log('toggleDirectionDropdown');
+		const directionDropdownOpen = !this.state.directionDropdownOpen;
+		this.setState({ directionDropdownOpen });
+	}
+
+	closeAllDropdowns() {
+		this.setState({
+			designDropdownOpen: false,
+			directionDropdownOpen: false
+		});
 	}
 
 	createDropdownLink(path, index, link) {
 		return (
 			<Link to={path} key={index}
-			      onClick={this.closeDropdown}
+			      onClick={this.closeAllDropdowns}
 			      className="w3-bar-item w3-button">
 				{link}
 			</Link>
@@ -55,25 +74,35 @@ export default class NavHeader extends React.Component {
 	}
 
 	render() {
+		const { designDropdownOpen, directionDropdownOpen } = this.state;
+
+		const designDropdownStyle = (designDropdownOpen)?
+			'w3-dropdown-content w3-bar-block w3-card-4 w3-show' : 'w3-dropdown-content w3-bar-block w3-card-4';
+
+		const directionDropdownStyle = (directionDropdownOpen)?
+			'w3-dropdown-content w3-bar-block w3-card-4 w3-show' : 'w3-dropdown-content w3-bar-block w3-card-4';
+
 		return (
 			<header className="nav-header w3-top">
 				<nav className="nav-bar">
 					<Link to="/" className="w3-button">
 						Home
 					</Link>
-					<div className="w3-dropdown-hover">
-						<button className="w3-button">
+					<div className="w3-dropdown-click">
+						<button className="w3-button"
+						        onClick={this.toggleDirectionDropdown}>
 							Creative Direction <i className="fa fa-caret-down"/>
 						</button>
-						<div className="w3-dropdown-content w3-bar-block w3-card-4">
+						<div className={directionDropdownStyle}>
 							{this.renderPortfolioLinks(DIRECTOR_TYPE)}
 						</div>
 					</div>
-					<div className="w3-dropdown-hover">
-						<button className="w3-button">
+					<div className="w3-dropdown-click">
+						<button className="w3-button"
+						        onClick={this.toggleDesignDropdown}>
 							Design <i className="fa fa-caret-down"/>
 						</button>
-						<div className="w3-dropdown-content w3-bar-block w3-card-4">
+						<div className={designDropdownStyle}>
 							{this.renderPortfolioLinks(DESIGNER_TYPE)}
 						</div>
 					</div>
