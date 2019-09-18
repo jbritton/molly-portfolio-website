@@ -16,7 +16,7 @@ const renderTile = ({path, link, linkSize, thumbnail}) => {
 
 const PortfolioHome = () => {
     return (
-        <section className="app-content portfolio-home">
+        <section className="app-content portfolio-home w3-animate-opacity">
 
             <div className="portfolio-title">
                 <h2 className="project-subheader">Molly Britton</h2>

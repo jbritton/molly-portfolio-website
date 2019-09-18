@@ -137,14 +137,14 @@ class PortfolioGallery extends React.Component {
 			return (
 				<img src={this.getImagePath(image)}
 				     key={image}
-				     className="w3-image w3-animate-opacity"/>
+				     className="w3-image"/>
 			);
 		});
 	}
 
 	render() {
 		return (
-			<section className="app-content portfolio-gallery"
+			<section className="app-content portfolio-gallery w3-animate-opacity"
 			         ref={(element) => { this.appContent = element; }}>
 				<div className="gallery-viewport w3-center">
 					<h2 className="project-subheader">{this.state.subtitle}</h2>

@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFEmail = () => {
 	return (
 		<div>
-			<section className="app-content omf-email-content">
+			<section className="app-content omf-email-content w3-animate-opacity">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/EMAIL_HERO.jpg" className="w3-image" />

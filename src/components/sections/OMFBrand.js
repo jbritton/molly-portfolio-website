@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFBrand = () => {
 	return (
 		<div>
-			<section className="app-content omf-brand-content">
+			<section className="app-content omf-brand-content w3-animate-opacity">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/BRAND_HERO.jpg" className="w3-image" />

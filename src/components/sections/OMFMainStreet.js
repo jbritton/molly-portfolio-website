@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const OMFMainStreet = () => {
 	return (
 		<div>
-			<section className="app-content omf-mainstreet-content">
+			<section className="app-content omf-mainstreet-content w3-animate-opacity">
 				<div className="w3-row">
 					<div className="w3-col s12">
 						<img src="assets/full/MOMS_Hero.jpg" className="w3-image" />

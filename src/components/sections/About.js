@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const About = () => {
     return (
         <div>
-            <section className="w3-content w3-center about-content">
+            <section className="w3-content w3-center about-content w3-animate-opacity">
                 <img src="assets/face.jpg" className="w3-image" style={{'width': '650px'}}/>
                 <h1>YOURS TRULY</h1>
                 <p>
