@@ -7,11 +7,11 @@
   "scripts": {
     "clean": "rimraf dist/bundle.js dist/style.css dist/index.html",
     "prebuild": "npm run clean",
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode=development --open"
   },
   "repository": {
     "type": "git",

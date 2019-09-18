@@ -6,11 +6,12 @@
 # BUGS
 - [ ] Add swipe handler on gallery for mobile
 - [ ] Proof read copy
-- [ ] Upgrade dependencies/fix security vulnerabilities
+
 
 - [?] Stack EU Site Launch mobile images? (Molly to verify)
 
 # Complete
+- [x] Upgrade dependencies/fix security vulnerabilities
 - [x] Zoom effect on tiles - CSS Grid homepage tiles?
 - [x] Fix inconsistent padding after videos on brand page
 - [x] Fix scrolling issue
