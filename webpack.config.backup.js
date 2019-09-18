@@ -1,8 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 
 //-------------------------------------------------------------------------------------------------
@@ -14,24 +15,18 @@ const definePlugin = new webpack.DefinePlugin({
   'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 });
 
+// extracts css into a separate file
+const extractTextPlugin = new ExtractTextPlugin('style.css');
+
 // injects script tags into the html template file
 const htmlPlugin = new HtmlWebpackPlugin({
-  template: './src/index.html',
-  filename: './index.html'
+  template: 'src/index.html'
 });
 
-// copies files
 const copyPlugin = new CopyWebpackPlugin([
   { from: 'src/assets', to: 'assets' },
   { from: 'CNAME' }
 ]);
-
-// extracts css file
-const cssExtractPlugin = new MiniCssExtractPlugin({
-  filename: "[name].css",
-  chunkFilename: "[id].css"
-})
-
 
 
 //-------------------------------------------------------------------------------------------------
@@ -49,28 +44,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         use: 'babel-loader',
         exclude: /node_modules/
       },
       {
         test: /\.css$/,
-        use: [ MiniCssExtractPlugin.loader, 'css-loader' ]
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                outputStyle: 'expanded' // non-minified - see: https://github.com/sass/node-sass/#options
-              }
-            }
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          loader: 'css-loader!postcss-loader'
+          // loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]&camelCase!postcss-loader'
+        })
       },
       {
         test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
@@ -105,8 +88,8 @@ module.exports = {
   },
   plugins: [
     definePlugin,
+    extractTextPlugin,
     htmlPlugin,
-    copyPlugin,
-    cssExtractPlugin
+    copyPlugin
   ]
 };

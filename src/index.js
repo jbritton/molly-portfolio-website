@@ -1,5 +1,4 @@
-import 'font-awesome/css/font-awesome.css';
-import './style/app.css';
+import './style/app-style';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
