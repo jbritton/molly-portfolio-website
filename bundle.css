@@ -3983,6 +3983,13 @@ img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .nav-header .nav-bar {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+}
+
 .nav-header button {
   text-transform: uppercase;
 }
@@ -4023,6 +4030,14 @@ img {
 
 .nav-header .w3-dropdown-click:hover > .w3-button:first-child {
   background-color: #fff !important;
+}
+
+.nav-header .submenu-back-button {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.nav-header .submenu-back-button i {
+  padding-right: 10px;
 }
 
 /* layout styles */
