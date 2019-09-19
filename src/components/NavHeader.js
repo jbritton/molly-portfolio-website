@@ -131,7 +131,8 @@ export default class NavHeader extends React.Component {
 		return (
 			<header className="nav-header w3-top">
 				<nav className="nav-bar">
-					<Link to="/" className="w3-button w3-hide-small">
+					<Link to="/"
+					      className="w3-button w3-hide-small">
 						Home
 					</Link>
 					<div className="w3-dropdown-click w3-hide-small">
@@ -160,7 +161,9 @@ export default class NavHeader extends React.Component {
 						</button>
 						<div className={mobileMenuStyle}>
 							<div className={mobileMainMenuStyle}>
-								<Link to="/" className="w3-bar-item w3-button">
+								<Link to="/"
+								      onClick={this.closeAllDropdowns}
+								      className="w3-bar-item w3-button">
 									Home
 								</Link>
 								<a className="w3-bar-item w3-button"
