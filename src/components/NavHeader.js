@@ -23,32 +23,65 @@ export default class NavHeader extends React.Component {
 		// init state
 		this.state = {
 			designDropdownOpen: false,
-			directionDropdownOpen: false
+			directionDropdownOpen: false,
+			mobileMenuOpen: false,
+			mobileSubMenuType: null
 		};
 
 		// bind handlers
 		this.toggleDesignDropdown = this.toggleDesignDropdown.bind(this);
 		this.toggleDirectionDropdown = this.toggleDirectionDropdown.bind(this);
+		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
 		this.closeAllDropdowns = this.closeAllDropdowns.bind(this);
 
 	}
 
 	toggleDesignDropdown(){
-		console.log('toggleDesignDropdown');
 		const designDropdownOpen = !this.state.designDropdownOpen;
-		this.setState({ designDropdownOpen });
+		this.setState({
+			directionDropdownOpen: false,
+			mobileMenuOpen: false,
+			designDropdownOpen
+		});
 	}
 
 	toggleDirectionDropdown(){
-		console.log('toggleDirectionDropdown');
 		const directionDropdownOpen = !this.state.directionDropdownOpen;
-		this.setState({ directionDropdownOpen });
+		this.setState({
+			designDropdownOpen: false,
+			mobileMenuOpen: false,
+			directionDropdownOpen
+		});
+	}
+
+	toggleMobileMenu(){
+		const mobileMenuOpen = !this.state.mobileMenuOpen;
+		this.setState({
+			designDropdownOpen: false,
+			directionDropdownOpen: false,
+			mobileSubMenuType: null,
+			mobileMenuOpen
+		});
+	}
+
+	showMobileMainMenu(){
+		this.setState({
+			mobileSubMenuType: null
+		});
+	}
+
+	showMobileSubMenu(type){
+		this.setState({
+			mobileSubMenuType: type
+		});
 	}
 
 	closeAllDropdowns() {
 		this.setState({
 			designDropdownOpen: false,
-			directionDropdownOpen: false
+			directionDropdownOpen: false,
+			mobileMenuOpen: false,
+			mobileSubMenuType: null
 		});
 	}
 
@@ -63,6 +96,9 @@ export default class NavHeader extends React.Component {
 	}
 
 	renderPortfolioLinks(type) {
+		if(!type){
+			return null;
+		}
 		const portfolioItems = Object.values(portfolioData)
 			.filter(item => (item.type === type))
 			.sort((x1, x2) => compareByProp(x1, x2, 'link'));
@@ -74,21 +110,31 @@ export default class NavHeader extends React.Component {
 	}
 
 	render() {
-		const { designDropdownOpen, directionDropdownOpen } = this.state;
+		const {
+			designDropdownOpen,
+			directionDropdownOpen,
+			mobileMenuOpen,
+			mobileSubMenuType
+		} = this.state;
 
 		const designDropdownStyle = (designDropdownOpen)?
 			'w3-dropdown-content w3-bar-block w3-card-4 w3-show' : 'w3-dropdown-content w3-bar-block w3-card-4';
-
 		const directionDropdownStyle = (directionDropdownOpen)?
 			'w3-dropdown-content w3-bar-block w3-card-4 w3-show' : 'w3-dropdown-content w3-bar-block w3-card-4';
+		const mobileMenuStyle = (mobileMenuOpen)?
+			'w3-dropdown-content w3-bar-block w3-card-4 w3-show' : 'w3-dropdown-content w3-bar-block w3-card-4';
+		const mobileMainMenuStyle = (mobileMenuOpen && !mobileSubMenuType)? 'w3-show' : 'w3-hide';
+		const mobileSubMenuStyle = (mobileMenuOpen && mobileSubMenuType)? 'w3-show' : 'w3-hide';
+
+		const mobileSubMenuLabel = (mobileSubMenuType === DIRECTOR_TYPE) ? 'Creative Direction' : 'Design';;
 
 		return (
 			<header className="nav-header w3-top">
 				<nav className="nav-bar">
-					<Link to="/" className="w3-button">
+					<Link to="/" className="w3-button w3-hide-small">
 						Home
 					</Link>
-					<div className="w3-dropdown-click">
+					<div className="w3-dropdown-click w3-hide-small">
 						<button className="w3-button"
 						        onClick={this.toggleDirectionDropdown}>
 							Creative Direction <i className="fa fa-caret-down"/>
@@ -97,7 +143,7 @@ export default class NavHeader extends React.Component {
 							{this.renderPortfolioLinks(DIRECTOR_TYPE)}
 						</div>
 					</div>
-					<div className="w3-dropdown-click">
+					<div className="w3-dropdown-click w3-hide-small">
 						<button className="w3-button"
 						        onClick={this.toggleDesignDropdown}>
 							Design <i className="fa fa-caret-down"/>
@@ -106,6 +152,40 @@ export default class NavHeader extends React.Component {
 							{this.renderPortfolioLinks(DESIGNER_TYPE)}
 						</div>
 					</div>
+
+					<div className="w3-dropdown-click w3-hide-medium w3-hide-large">
+						<button className="w3-button menu-toggle-button"
+						        onClick={this.toggleMobileMenu}>
+							<i className="fa fa-bars pull-right"/>
+						</button>
+						<div className={mobileMenuStyle}>
+							<div className={mobileMainMenuStyle}>
+								<Link to="/" className="w3-bar-item w3-button">
+									Home
+								</Link>
+								<a className="w3-bar-item w3-button"
+								   onClick={() => this.showMobileSubMenu(DIRECTOR_TYPE)}>
+									Creative Direction
+									<i className="fa fa-chevron-right pull-right"/>
+								</a>
+								<a className="w3-bar-item w3-button"
+								   onClick={() => this.showMobileSubMenu(DESIGNER_TYPE)}>
+									Design
+									<i className="fa fa-chevron-right pull-right"/>
+								</a>
+							</div>
+
+							<div className={mobileSubMenuStyle}>
+								<a className="w3-bar-item w3-button submenu-back-button"
+								   onClick={() => this.showMobileMainMenu()}>
+									<i className="fa fa-chevron-left"/>
+									{mobileSubMenuLabel}
+								</a>
+								{this.renderPortfolioLinks(mobileSubMenuType)}
+							</div>
+						</div>
+					</div>
+
 					{/*<Link to="/about" className="w3-bar-item w3-button">*/}
 					{/*About*/}
 					{/*</Link>*/}

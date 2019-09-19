@@ -1,9 +1,7 @@
 
 # TODO:
-- [ ] Fix grid tile slicing
 - [ ] Mobile - hamburger menu
-
-# BUGS
+- [ ] Fix grid tile slicing
 - [ ] Add swipe handler on gallery for mobile
 - [ ] Proof read copy
 

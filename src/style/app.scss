@@ -40,6 +40,13 @@ img {
         width: 100%;
     }
 
+    @media (max-width: 768px) {
+        .nav-bar {
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+    }
+
     button {
         text-transform: uppercase;
     }
@@ -80,6 +87,14 @@ img {
 
     .w3-dropdown-click:hover > .w3-button:first-child {
         background-color: #fff !important;
+    }
+
+    .submenu-back-button {
+        border-bottom: 1px solid #ddd !important;
+
+        i {
+            padding-right: 10px;
+        }
     }
 }
 
