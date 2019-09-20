@@ -63,6 +63,12 @@ img {
          }
     }
 
+    @media (max-width: 768px) {
+        .w3-button {
+            padding: 20px 16px;
+        }
+    }
+
     .w3-dropdown-content .w3-button {
         border-bottom: 0;
 
@@ -102,7 +108,7 @@ img {
 /* layout styles */
 .main-content {
     width: 100%;
-    padding-top: 64px;
+    padding-top: 54px;
 }
 
 .app-content {
@@ -173,9 +179,6 @@ footer {
          transform:scale(1.15);
      }
 }
-
-
-
 
 
 /* about section */
@@ -280,10 +283,22 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .project-section, .project-credits {
+        padding: 60px 60px 80px 60px;
+    }
+}
+
 .project-header {
     text-align: center;
     font-size: 46px;
     margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .project-header {
+        font-size: 36px;
+    }
 }
 
 .project-subheader {

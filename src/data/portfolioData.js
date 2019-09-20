@@ -182,7 +182,7 @@ export const portfolioData = {
 		renderer: () => {
 			const title = 'Product Styling and Email Marketing';
 			const subtitle = 'Photography Art Director, Lead Designer';
-			const images = ['Portfolio_Emails_1.jpg', 'Portfolio_Emails_2.jpg'];
+			const images = ['Portfolio_Emails_2.jpg', 'Portfolio_Emails_1.jpg'];
 			return renderGallery(title, subtitle, images);
 		}
 	},

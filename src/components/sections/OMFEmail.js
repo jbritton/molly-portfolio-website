@@ -57,7 +57,7 @@ const OMFEmail = () => {
 							In the initial redesign, we used the straight across tagline logo lockup, centered on a white header. A hero image space was allotted for 4 of the designs, which would be used  primarily for solicitation emails. We provided 4 different hero image layouts, for icon use, non-icon use, additional information sections, and horizontal vs. vertical stacks. There were 2 designs dedicated to the Rewards Program, enrollment and engagement, and 2 text only templates designed for non-solicitation sends.
 						</p>
 						<p>
-							Based on the test results from the preliminary set of designs, we shifted the templates into a second and final round of design. The tagline was dropped from the logo, we added more hierarchy definition to the type treatment, the body was differentiated by a narrower width than the hero image and a powder blue background, and social icons were changed to follow new CTA rules. We added an additional hero image design, and separated out the Rewards Program emails into their own category, adding a 3rd teamplate to the group.
+							Based on the test results from the preliminary set of designs, we shifted the templates into a second and final round of design. The tagline was dropped from the logo, we added more hierarchy definition to the type treatment, the body was differentiated by a narrower width than the hero image and a powder blue background, and social icons were changed to follow new CTA rules. We added an additional hero image design, and separated out the Rewards Program emails into their own category, adding a 3rd template to the group.
 						</p>
 					</div>
 				</div>

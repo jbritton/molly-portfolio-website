@@ -85,7 +85,7 @@ const OMFWeb = () => {
 					<div className="w3-col s12 project-section">
 						<h2 className="project-subheader">Header/Footer</h2>
 						<p>
-							The redesign of the header and footer were an important first step to redefining the orgainizational structure and visual balance for the rest of the website.  Simplifying the color scheme, cleaning up the hierarchy of information and providing a more seamless user experience were the top priorities. We also updated the social icons to fit the new design direction, reworked CTA styles, and defined legal annotation rules.
+							The redesign of the header and footer were an important first step to redefining the organizational structure and visual balance for the rest of the website.  Simplifying the color scheme, cleaning up the hierarchy of information and providing a more seamless user experience were the top priorities. We also updated the social icons to fit the new design direction, reworked CTA styles, and defined legal annotation rules.
 						</p>
 					</div>
 				</div>

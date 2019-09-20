@@ -33,7 +33,28 @@ export default class NavHeader extends React.Component {
 		this.toggleDirectionDropdown = this.toggleDirectionDropdown.bind(this);
 		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
 		this.closeAllDropdowns = this.closeAllDropdowns.bind(this);
+		this.handleClickOutside = this.handleClickOutside.bind(this);
 
+	}
+
+	componentWillUnmount() {
+		this.removeClickOutsideListener();
+	}
+
+	componentWillUpdate(nextProps, nextState, nextContext) {
+		const isOpenNow = (this.state.designDropdownOpen || this.state.directionDropdownOpen || this.state.mobileMenuOpen);
+		const isOpening = (!isOpenNow && (nextState.designDropdownOpen || nextState.directionDropdownOpen || nextState.mobileMenuOpen));
+		const isClosing = (isOpenNow && (!nextState.designDropdownOpen && !nextState.directionDropdownOpen && !nextState.mobileMenuOpen));
+
+		// dropdown is opening - add click outside listener
+		if(isOpening){
+			this.addClickOutsideListener();
+		}
+
+		// dropdown is closing - remove click outside listener
+		if(isClosing){
+			this.removeClickOutsideListener();
+		}
 	}
 
 	toggleDesignDropdown(){
@@ -74,6 +95,20 @@ export default class NavHeader extends React.Component {
 		this.setState({
 			mobileSubMenuType: type
 		});
+	}
+
+	addClickOutsideListener(){
+		window.addEventListener('click', this.handleClickOutside);
+	}
+
+	removeClickOutsideListener(){
+		window.removeEventListener('click', this.handleClickOutside);
+	}
+
+	handleClickOutside(e){
+		if(!this.node.contains(e.target)){
+			this.closeAllDropdowns();
+		}
 	}
 
 	closeAllDropdowns() {
@@ -129,7 +164,8 @@ export default class NavHeader extends React.Component {
 		const mobileSubMenuLabel = (mobileSubMenuType === DIRECTOR_TYPE) ? 'Creative Direction' : 'Design';;
 
 		return (
-			<header className="nav-header w3-top">
+			<header className="nav-header w3-top"
+			        ref={node => this.node = node}>
 				<nav className="nav-bar">
 					<Link to="/"
 					      className="w3-button w3-hide-small">

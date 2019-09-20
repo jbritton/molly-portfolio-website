@@ -1,6 +1,8 @@
 
 # TODO:
-- [ ] Mobile - hamburger menu
+
+- [ ] Mobile - collage too small for commercials and photography
+- [ ] Mobile menu - cant scroll to see full list under design
 - [ ] Fix grid tile slicing
 - [ ] Add swipe handler on gallery for mobile
 - [ ] Proof read copy
@@ -9,6 +11,13 @@
 - [?] Stack EU Site Launch mobile images? (Molly to verify)
 
 # Complete
+- [x] Product styling - default to 2nd image
+- [x] Mobile copy padding
+- [x] Mobile menu - click outside handler
+- [x] Remove gap above heros
+- [x] Correct misspellings
+- [x] Mobile menu - close when clicked outside
+- [x] Mobile - hamburger menu
 - [x] Upgrade dependencies/fix security vulnerabilities
 - [x] Zoom effect on tiles - CSS Grid homepage tiles?
 - [x] Fix inconsistent padding after videos on brand page
