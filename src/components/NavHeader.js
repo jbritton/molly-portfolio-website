@@ -99,10 +99,12 @@ export default class NavHeader extends React.Component {
 
 	addClickOutsideListener(){
 		window.addEventListener('click', this.handleClickOutside);
+		window.addEventListener('touchstart', this.handleClickOutside);
 	}
 
 	removeClickOutsideListener(){
 		window.removeEventListener('click', this.handleClickOutside);
+		window.removeEventListener('touchstart', this.handleClickOutside);
 	}
 
 	handleClickOutside(e){

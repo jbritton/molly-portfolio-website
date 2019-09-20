@@ -83,7 +83,7 @@ img {
     }
 
     .w3-dropdown-content {
-        z-index: 9;
+        z-index: 11;
     }
 
     .w3-dropdown-content .w3-button {
@@ -97,7 +97,7 @@ img {
 
     .mobile-menu {
         .w3-dropdown-content {
-            z-index: 999;
+            z-index: 12;
 
             .w3-button {
                 padding: 6px 16px;
@@ -230,7 +230,7 @@ footer {
 /* gallery styles */
 
 .gallery-scroll {
-    z-index: 1;
+    z-index: 0;
     position: fixed;
     top: 50vh;
     font-size: 28px;
@@ -255,7 +255,7 @@ footer {
 }
 
 .gallery-paging-controls {
-    z-index: 1;
+    z-index: 0;
     position: fixed;
     top: 90vh;
     left: 0px;
