@@ -4026,7 +4026,7 @@ img {
 }
 
 .nav-header .w3-dropdown-content {
-  z-index: 9;
+  z-index: 11;
 }
 
 .nav-header .w3-dropdown-content .w3-button {
@@ -4039,7 +4039,7 @@ img {
 }
 
 .nav-header .mobile-menu .w3-dropdown-content {
-  z-index: 999;
+  z-index: 12;
 }
 
 .nav-header .mobile-menu .w3-dropdown-content .w3-button {
@@ -4207,7 +4207,7 @@ footer {
 
 /* gallery styles */
 .gallery-scroll {
-  z-index: 1;
+  z-index: 0;
   position: fixed;
   top: 50vh;
   font-size: 28px;
@@ -4232,7 +4232,7 @@ footer {
 }
 
 .gallery-paging-controls {
-  z-index: 1;
+  z-index: 0;
   position: fixed;
   top: 90vh;
   left: 0px;
