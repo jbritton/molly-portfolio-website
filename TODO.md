@@ -1,8 +1,6 @@
 
 # TODO:
-
-- [ ] Mobile - collage too small for commercials and photography
-- [ ] Mobile menu - cant scroll to see full list under design
+- [?] Mobile menu - cant scroll to see full list under design
 - [ ] Fix grid tile slicing
 - [ ] Add swipe handler on gallery for mobile
 - [ ] Proof read copy
@@ -11,6 +9,7 @@
 - [?] Stack EU Site Launch mobile images? (Molly to verify)
 
 # Complete
+- [x] Mobile - collage too small for commercials and photography
 - [x] Product styling - default to 2nd image
 - [x] Mobile copy padding
 - [x] Mobile menu - click outside handler

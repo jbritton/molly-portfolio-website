@@ -190,7 +190,7 @@ export default class NavHeader extends React.Component {
 						</div>
 					</div>
 
-					<div className="w3-dropdown-click w3-hide-medium w3-hide-large">
+					<div className="w3-dropdown-click w3-hide-medium w3-hide-large mobile-menu">
 						<button className="w3-button menu-toggle-button"
 						        onClick={this.toggleMobileMenu}>
 							<i className="fa fa-bars pull-right"/>
@@ -224,10 +224,6 @@ export default class NavHeader extends React.Component {
 							</div>
 						</div>
 					</div>
-
-					{/*<Link to="/about" className="w3-bar-item w3-button">*/}
-					{/*About*/}
-					{/*</Link>*/}
 				</nav>
 			</header>
 		);

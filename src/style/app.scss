@@ -95,6 +95,17 @@ img {
         background-color: #fff !important;
     }
 
+    .mobile-menu {
+        .w3-dropdown-content {
+            z-index: 999;
+
+            .w3-button {
+                padding: 6px 16px;
+                font-size: 12px;
+            }
+        }
+    }
+
     .submenu-back-button {
         border-bottom: 1px solid #ddd !important;
 
@@ -339,12 +350,24 @@ footer {
     padding: 25px 150px;
 }
 
+@media (max-width: 768px) {
+    .commercial-stills {
+        padding: 25px 60px;
+    }
+}
+
 .commercial-stills-last {
     padding-bottom: 0;
 }
 
 .photography-stills {
     padding: 0px 125px 50px 125px;
+}
+
+@media (max-width: 768px) {
+    .photography-stills {
+        padding: 0px 60px 50px 60px;
+    }
 }
 
 /* design gallery section styles */
