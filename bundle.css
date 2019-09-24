@@ -4309,6 +4309,10 @@ footer {
   margin-bottom: 0;
 }
 
+.omf-brand-content img, .omf-mainstreet-content img, .omf-email-content img, .omf-web-content img {
+  margin-bottom: -10px;
+}
+
 /* creative direction section styles */
 .commercial-video:hover, .commercial-video:focus {
   outline: none;
