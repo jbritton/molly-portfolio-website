@@ -3964,10 +3964,6 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
   cursor: pointer;
 }
 
-img {
-  margin-bottom: -10px;
-}
-
 /* navigation styles */
 .nav-header .nav-bar {
   z-index: 10;
@@ -4166,6 +4162,7 @@ footer {
   border: none;
   transform: scale(1);
   transition: all 1s;
+  margin-bottom: 0px;
 }
 
 .portfolio-link:hover img {

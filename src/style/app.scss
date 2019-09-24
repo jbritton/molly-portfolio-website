@@ -281,7 +281,6 @@ footer {
 }
 
 
-
 /*  project styles */
 .project-section, .project-credits {
     padding: 60px 80px 80px 80px;
@@ -338,6 +337,11 @@ footer {
 
 }
 
+.omf-brand-content, .omf-mainstreet-content, .omf-email-content, .omf-web-content {
+    img {
+        margin-bottom: -10px;
+    }
+}
 
 /* creative direction section styles */
 .commercial-video:hover, .commercial-video:focus {
