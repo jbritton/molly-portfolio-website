@@ -4,12 +4,9 @@ import Footer from '../Footer';
 import {portfolioData} from '../../data/portfolioData';
 
 const renderTile = ({path, link, linkSize, thumbnail}) => {
-    const textSize = (linkSize === 'L')? 'label-large' : '';
-    const linkClasses = 'label ' + textSize;
     return (
         <Link to={path} className="portfolio-link">
-            <img src={`assets/tiles/${thumbnail}`}
-                 className="w3-image" />
+            <img src={`assets/tiles/${thumbnail}`} />
         </Link>
     );
 };

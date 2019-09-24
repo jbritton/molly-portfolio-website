@@ -22,7 +22,7 @@ export const portfolioData = {
 		type: DESIGNER_TYPE,
 		path: '/na-gift-guide',
 		link: 'American Gift Guide',
-		thumbnail: 'PORTFOLIO_TILES_09_v2.jpg',
+		thumbnail: 'PORTFOLIO_TILES_09.jpg',
 		renderer: () => {
 			const title = 'North America Gift Guide, 2015';
 			const subtitle = 'Photography Art Director, Designer';
@@ -46,7 +46,7 @@ export const portfolioData = {
 		type: DESIGNER_TYPE,
 		path: '/innovation',
 		link: 'Brazil Innovation',
-		thumbnail: 'PORTFOLIO_TILES_01_v2.jpg',
+		thumbnail: 'PORTFOLIO_TILES_01.jpg',
 		renderer: () => {
 			const title = 'Brazil Innovation Pages Design, 2014';
 			const subtitle = 'Lead UX and Visual Designer (Live Text Design with Parallax';

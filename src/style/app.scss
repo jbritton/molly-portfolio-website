@@ -19,10 +19,6 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     cursor: pointer;
 }
 
-img {
-    margin-bottom: -10px;
-}
-
 /* navigation styles */
 .nav-header {
 
@@ -184,12 +180,14 @@ footer {
         border: none;
         transform: scale(1);
         transition: all 1s;
+        margin-bottom: 0px;
     }
 
     &:hover img {
          transform:scale(1.15);
-     }
+    }
 }
+
 
 
 /* about section */
