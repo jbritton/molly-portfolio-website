@@ -18,7 +18,7 @@ const OMFEmail = () => {
 							One of the first goals I had at OneMain, was to improve the email design structure, which was lacking consistency and brand recognition. The header and footer were not standardized, there were no guidelines for font usage, spacing, padding, body width, headlines, subheads, CTAs, etc. As a result, each email looked like it was coming from a different company.
 						</p>
 						<p>
-							The objective of the redesign was to develop a cohesive set of templates that would be versatile enough to fit all subject matter needs, both solicitations and non-solicitation. We would need to solve for a variety of programs including rewards, account management, collections, social engagement, merchant referral, etc.
+							The objective of the redesign was to develop a cohesive set of templates that would be versatile enough to fit all subject matter needs, both solicitations and non-solicitations. We would need to solve for a variety of programs including rewards, account management, collections, social engagement, merchant referral, etc.
 						</p>
 					</div>
 				</div>
@@ -35,7 +35,7 @@ const OMFEmail = () => {
 							Based on the existing email criteria and categories, we tested in to 2 rounds of creative. For the first round we created 8 different individual templates that worked as a family of designs. The idea was that the project requestor could select a design from those options based on the criteria of the assignment.
 						</p>
 						<p>
-							We took into consideration the need for images and icons for some marketing sends, and the need for copy only for others. We formated the header, footer, body width, text size and color, CTA treatment, social icon style, hyperlink treatment, etc. We implemented all new brand guidelines, and established consistency that the email platform was lacking.
+							We took into consideration the need for images and icons for some marketing sends, and the need for copy only for others. We formated the header, footer, body width, text size and color, CTA treatment, social icon style, hyperlink treatment, etc. We implemented all new brand guidelines and established consistency that the email platform was lacking.
 						</p>
 					</div>
 				</div>
@@ -71,7 +71,7 @@ const OMFEmail = () => {
 					<div className="w3-col s12 project-section">
 						<h2 className="project-subheader">Mobile</h2>
 						<p>
-							The final templates were better optomized for mobile display, editing image and text size/orientation to scale responsively. The body section margins were dropped for mobile, but all other design details would appear consistent across all devices.
+							The final templates were better optimized for mobile display, editing image and text size/orientation to scale responsively. The body section margins were dropped for mobile, but all other design details would appear consistent across all devices.
 						</p>
 					</div>
 				</div>
